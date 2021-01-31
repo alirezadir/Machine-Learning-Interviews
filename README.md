@@ -2,15 +2,15 @@
 
 :label: Note: This repo is still under development, and all feedback and contribution are very welcome :blush:
 
-This repo aims to be a guideline for preparing for machine learning interviews, and has been developed based on my personal experience and notes during my own interview prep. 
+This repo aims to be a guideline for preparing for **Machine Learning interviews**, and has been developed based on my personal experience and notes during my own interview prep. 
 
-At the time I'm putting these notes together, machine learning interviews interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings. 
+At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings. 
 
-My preparation was focused mostly for "Machine Learning Engineer" (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Dcience" or "ML reserachscientis" have different structure, some of the modules reviewed can be still useful. 
+My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Dcience" or "ML research scientist" have different structure, some of the modules reviewed can be still useful. For more understanding about diff
 
 The following components are the most common interview modules that I found for ML engineer roles at different companies. We will go through them one by one and share how one can prepare. 
 
-## 1. General Coding (Algorithms and Data Structures) Interview :computer:
+# 1. General Coding (Algorithms and Data Structures) Interview :computer:
 As an ML engineer, you're first expected to have a good understanding of general software engineering concepts, and in particular, basic algorithms and data structure. 
 
 Depending on the company and seniority level, there is usually one or two rounds of general coding interviews. The general coding interview is very similar to SW engineer coding interviews, and one can get prepared for this one same as other SW engineering roles. 
@@ -18,71 +18,155 @@ Depending on the company and seniority level, there is usually one or two rounds
 At this time, [leetcode](https://leetcode.com/) is the most popular place to practice coding questions. However, I also found [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) from [educative.io](https://www.educative.io/) pretty helpful in organizing my mind on approaching interview questions with similar patterns. 
 
 
-## 2. ML Coding :robot:
+# 2. ML Coding :robot:
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 - k-means clustering 
 - k-nearest neighbors 
 - Decision trees 
+- Perceptron, MLP 
+- Linear regression 
+- Logistic regression 
+- SVM 
+- Sampling 
+  - stratified sampling
+  - uniform sampling
+  - reservoir sampling 
+  - sampling multinomial distribution 
+  - random generator 
+- NLP 
+  - bigrams 
+  - tf-idf 
+
+#### Sample codes for popular ML algorithms  
+- Python [TBD]
 
 
-## ML Depth 
+# 3. ML Depth 
+ML depth interviews typically aim to measure your depth level of knowledge in both theoretical and practical machine learning. Although this may sound scary at the beginning, this could be potentially one of the easiest rounds if you know well what you have worked on before. In other words, ML depth interviews typically focus on your previous ML related projects, but as deep as possible! 
 
-## ML Breadth/Fundamentals  
-Courses and review material: 
-- Andrew Ng's Machine Learning Course 
-- Udacity 
-- Machine Learning cheatsheets (only if you already know the concepts)
+Typically these sessions start with going through one of your past projects (which depending on the company, it could be either your or the interviewer's choice). It generally starts as a high level discussion, and the interviewer gradually dives deeper in one or multiple aspects of the project, sometimes until you get stuck (so it's totally ok to get stuck, maybe just not too early!).
+
+The best advice to prepare for this interview is to know the details of what you've worked on  before (really well), even if it's 5 years ago (and not be like that guy who once replied "hmm ... I worked on this 5 years ago and I don't recall the details :D " ). 
+
+## Example
+TBD 
+
+# 4. ML Breadth/Fundamentals  
+As the name suggests, this interview is intended to evaluate your general knowledge of ML concepts both from theoretical and practical perspectives. Unlike ML depth interviews, the breadth interviews tend to follow a pretty similar structure and coverage amongst different interviewers and interviewees.  
+
+The best way to prepare for this interview is to review your notes from ML courses as well some high quality online courses and material. In particular, I found the following resources pretty helpful. 
+
+## Courses and review material: 
+- [Andrew Ng's Machine Learning Course](https://www.coursera.org/learn/machine-learning) (you can also find the [lectures on Youtube](https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) )
+- [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
+- [Udacity's deep learning nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) or  [Coursera's Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) (for deep learning)
+
+
+If you already know the concepts, teh following resources are pretty useful for a quick review of different concepts: 
+- [StatQuest Machine Learning videos](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
+- [StatQuest Statistics](https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) (for statistics review - most useful for Data Science rols)
+- [Machine Learning cheatsheets](https://ml-cheatsheet.readthedocs.io/en/latest/)
+- [Chris Albon's ML falshcards](https://machinelearningflashcards.com/) 
+
+## Most important topics to cover for breadth 
+### 1. Classic ML Concepts 
+
+#### ML Algorithms' Categories 
+  - Supervised, unsupervised, and semi-supervised learning (with examples) 
+    - Classification vs regression vs clustering 
+  - Parametric vs non-parametric algorithms 
+  - Linear vs Nonlinear algorithms 
+#### Supervised learning 
+  - Linear Algorithms
+    - Linear regression 
+      - least squares, residuals,  linear vs multivariate regression
+    - Logistic regression 
+      - cost function (equation, code),  sigmoid function, cross entropy
+    - Support Vector Machines 
+    - Linear discriminant analysis  
+  - Bayesian algorithms 
+    - Naive Bayes 
+    - Maximum a posteriori (MAP) estimation
+    - Maximum Likelihood (ML) estimation  
+
+  - Decision Trees
+    - Logits 
+    - Leaves
+    - Training algorithm  
+      - stop criteria 
+    - Inference
+    - Pruning 
+
+  - Ensemble methods 
+    - Bagging and boosting methods (with examples)
+    - Random Forest 
+    - Boosting
+      - Adaboost 
+      - GBM 
+      - XGBoost 
+  - Comparison of different algorithms 
+    - [TBD: LinkedIn lecture]
+
+  - Optimization 
+    - Gradient descent (concept, formula, code)
+    - Other variations of gradient descent 
+      - SGD 
+      - Momentum 
+      - RMSprop 
+      - ADAM 
+  - Loss functions 
+    - Logistic Loss fcn
+    - Cross Entropy (formula)
+    - Hinge loss (SVM) 
+
+
+- Feature selection 
+  - Feature importance
+- Model evaluation and selection 
+  - Evaluation metrics
+    - TP, FP, TN, FN
+    - Confusion matrix 
+    - Accuracy, precision, recall/sensitivity, specificity, F-score 
+      - how do you choose among these? (imbalanced datasets)
+      - precision vs TPR (why precision)
+    - ROC curve (TPR vs FPR, threshold selection)
+    - AUC (model comparison)
+    - Extension of the above to multi-class (n-ary) classification  
+    - algorithm specific metrics [TBD]
+  - Model selection 
+    - Cross validation 
+      - k-fold cross validation (what's a good k value?)
+
+#### Unsupervised learning 
+  - Clustering 
+    - k-means clustering 
+    - Hierarchical clustering 
+    - ?
+  - Gaussian Mixture Models 
+  - Latent semantic analysis 
+  - Hidden Markov Models (HMMs)  
+    - ?? fnc and ?? 
+  - Dimension reduction techniques 
+    - PCA
+    - ICA 
+    - T-sne 
+ 
+
+#### Bias / Variance (Underfitting/Overfitting)
+- Regularization techniques 
+  - L1/L2 (Lasso/Ridge)
+#### Sampling 
+- sampling techniques 
+  - Uniform sampling 
+  - Reservoir sampling 
+  - Stratified sampling 
+#### Missing data 
+ - TBD 
+#### Time complexity of ML algorithms 
 - 
 
-### Classic ML Concepts 
-Pros, cons
-- ML Algorithms' Categories 
-  - Supervised, unsupervised, and semi-supervised learning with examples 
-  - Parametric vs non-parametric algorithms 
-- ML Algorithms
-- Linear and Logistic regression 
-  - what is it
-  - cost function, equation, code 
-  - linear vs multivariate regression 
-  - metrics for performance evaluation 
-  - cost function 
-  - Sigmoid function? cross entropy?
-- Optimization 
-  - Gradient descent and its variations 
-- Support Vector Machines 
-- Linear discriminant analysis  
-- Bayesian algorithms 
-  - Naive Bayes 
-  - MAP
-  - ML 
-- Decision Trees
-  - logits 
-  - leaves?
-  - training 
-    - stop criteria 
-  - inference
-  - pruning 
-- Ensemble methods 
-  - Difference between bagging and boosting 
-  - Random Forest 
-  - Boosting
-    - Adaboost 
-    - GBM 
-    - XGBoost 
-  
-  
-- Clustering 
-  - k-means clustering 
-  - 
-  - code
-- Gaussian Mixture Models 
-- Latent semantic analysis 
-- HMMs  
-- Dimension reduction techniques 
-  - PCA
-  - ICA 
-  - T-sne 
-## Deep learning 
+
+### 2. Deep learning 
 - Feedforward NNs
   - In depth knowledge of how they work 
   - [EX] activation function for classes that are not mutually exclusive 
@@ -96,34 +180,16 @@ Pros, cons
   - how to apply dropout to LSTM?
 - Attention 
   - self-attention    
-- Transformer Architecture (in details, yes, no kidding! -- in an ideal world, I wouldn't answer those detailed questions to anyone except the authors and teammates, as either you've designed it or memorized it!) 
+- Transformer Architecture (in details, yes, no kidding! -- in an ideal world, I wouldn't answer those detailed questions to anyone except the authors and teammates, as either you've designed it or memorized it!)
 
-## Bias/Variance (Underfitting/Overfitting)
-- Regularization techniques 
-  - L1/L2 (Lasso/Ridge)
-## Sampling 
-- sampling techniques 
-  - Uniform sampling 
-  - Reservoir sampling 
-  - Stratified sampling 
-## Missing data 
 
-## Loss functions 
-- Logistic Loss fcn
-- Cross Entropy (formula)
-- Hinge loss (SVM)
-- 
-## Feature selection + Model evaluation/selection 
-    - Evaluation Metrics 
-      - Accuracy, Precision, Recall 
-      - F1 
-      - ROC curve 
-      - AUC 
+
 ## Statistical significance 
 - p-values 
 ## Other: 
     - outliers 
     - similarity/dissimilarity metrics 
+
 # Machine Learning System Design 
 debugging 
 ### 
@@ -142,7 +208,10 @@ debugging
   - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
   - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
 
-## Machine Learning at Scale 
+
+
+# Machine Learning Design 
+## ML at Scale 
 other: chip h 
 ## ML at Companies 
 - ML at LinkedIn 
@@ -198,3 +267,5 @@ other: chip h
 
  
  
+# Behavioral interviews 
+- STAR method [TBD]
