@@ -227,25 +227,26 @@ This is one of my favorite interviews in which you can shine bright and uplevel 
 Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems, which I learnt a lot from. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
 
 ### ML System Design Flow
+Approaching an ML system design problem follows a similar flow to the generic software system design.
+For more insight on system design interview you can e.g. check out:
+- [Grokking the System Design Interview
+](https://www.educative.io/courses/grokking-the-system-design-interview)
+- [System design primer](https://github.com/donnemartin/system-design-primer)
 
-### Debugging ML Systems
-- [TBD]
+Below is a deisgn flow that I would recommend:
 
-### Testing ML systems
-
-Machine Learning production software requires a more diverse set of test suites than traditional software:
 <p align="center">
   <img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/testing.png" title="" width="75%" height="75%">
-   </p>
+</p>
 
-## ML System Design Topics
+
+## Some ML System Design Topics
 ### Recommendation Systems
 - examples
 - collaboration filtering
     - chi chi based
     - Matrix factorization, LDA?
 - Content based filtering
-## ML domains
 ### Computer vision
 - TBD
 ### NLP
