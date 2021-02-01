@@ -47,8 +47,8 @@ ML coding module may or may not exist in particular companies interviews. The go
   - bigrams
   - tf-idf
 
-#### Sample codes for popular ML algorithms
-- Python [TBD]
+## Sample codes
+- You can find some sample codes (or links to ones) in the [ML_Coding_Problems Notebook](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/Notebooks/ML_Coding_Problems.ipynb).
 
 
 # 3. ML Depth
@@ -58,8 +58,9 @@ Typically these sessions start with going through one of your past projects (whi
 
 The best advice to prepare for this interview is to know the details of what you've worked on  before (really well), even if it's 5 years ago (and not be like that guy who once replied "hmm ... I worked on this 5 years ago and I don't recall the details :D " ).
 
-## Example
-TBD
+**Examples:**
+
+- [TBD]
 
 # 4. ML Breadth/Fundamentals
 As the name suggests, this interview is intended to evaluate your general knowledge of ML concepts both from theoretical and practical perspectives. Unlike ML depth interviews, the breadth interviews tend to follow a pretty similar structure and coverage amongst different interviewers and interviewees.
@@ -78,15 +79,15 @@ If you already know the concepts, teh following resources are pretty useful for 
 - [Machine Learning cheatsheets](https://ml-cheatsheet.readthedocs.io/en/latest/)
 - [Chris Albon's ML falshcards](https://machinelearningflashcards.com/)
 
-## Most important topics to cover for breadth
-### 1. Classic ML Concepts
+Below are the most important topics to cover:
+## 1. Classic ML Concepts
 
-#### ML Algorithms' Categories
+### ML Algorithms' Categories
   - Supervised, unsupervised, and semi-supervised learning (with examples)
     - Classification vs regression vs clustering
   - Parametric vs non-parametric algorithms
   - Linear vs Nonlinear algorithms
-#### Supervised learning
+### Supervised learning
   - Linear Algorithms
     - Linear regression
       - least squares, residuals,  linear vs multivariate regression
@@ -94,10 +95,6 @@ If you already know the concepts, teh following resources are pretty useful for 
       - cost function (equation, code),  sigmoid function, cross entropy
     - Support Vector Machines
     - Linear discriminant analysis
-  - Bayesian algorithms
-    - Naive Bayes
-    - Maximum a posteriori (MAP) estimation
-    - Maximum Likelihood (ML) estimation
 
   - Decision Trees
     - Logits
@@ -147,36 +144,37 @@ If you already know the concepts, teh following resources are pretty useful for 
     - Cross validation
       - k-fold cross validation (what's a good k value?)
 
-#### Unsupervised learning
+### Unsupervised learning
   - Clustering
-    - k-means clustering
-    - Hierarchical clustering
-    - ?
+    - Centriod models: k-means clustering
+    - Conenctivity models: Hierarchical clustering
+    - Density models: DBSCAN
   - Gaussian Mixture Models
   - Latent semantic analysis
   - Hidden Markov Models (HMMs)
-    - ?? fnc and ??
+    - Markov processes
+    - Transition probability and emission probability
+    - Viterbi algorithm [Advanced]
   - Dimension reduction techniques
-    - PCA
-    - ICA
+    - Principal Component Analysis (PCA)
+    - Independent Component Analysis (ICA)
     - T-sne
 
 
-#### Bias / Variance (Underfitting/Overfitting)
+### Bias / Variance (Underfitting/Overfitting)
 - Regularization techniques
   - L1/L2 (Lasso/Ridge)
-#### Sampling
+### Sampling
 - sampling techniques
   - Uniform sampling
   - Reservoir sampling
   - Stratified sampling
-#### Missing data
- - TBD
-#### Time complexity of ML algorithms
--
+### Missing data
+ - [TBD]
+### Time complexity of ML algorithms
+- [TBD]
 
-
-### 2. Deep learning
+## 2. Deep learning
 - Feedforward NNs
   - In depth knowledge of how they work
   - [EX] activation function for classes that are not mutually exclusive
@@ -192,17 +190,55 @@ If you already know the concepts, teh following resources are pretty useful for 
   - self-attention
 - Transformer Architecture (in details, yes, no kidding! -- in an ideal world, I wouldn't answer those detailed questions to anyone except the authors and teammates, as either you've designed it or memorized it!)
 
+## 3. Statistical ML
+###  Bayesian algorithms
+  - Naive Bayes
+  - Maximum a posteriori (MAP) estimation
+  - Maximum Likelihood (ML) estimation
+### Statistical significance
+- R-squared
+- P-values
 
+## 4. Other topics:
+  - Outliers
+  - Similarity/dissimilarity metrics
+    - Euclidean, Manhattan, Cosine, Mahalanobis (advanced)
 
-## Statistical significance
-- p-values
-## Other:
-    - outliers
-    - similarity/dissimilarity metrics
+# 5. Machine Learning System Design
 
-# Machine Learning System Design
-debugging
-###
+## Designing ML systems for production
+This is one of my favorite interviews in which you can shine bright and uplevel your career. I'd like to mention the following important notes:
+
+- Remember, the goal of ML system design interview is NOT to measure your deep and detailed knowledge of different ML algorithms, but your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
+
+- Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
+<p align="center">
+<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="95%" height="95%">
+</p>
+
+- For more insight on different components above you can check out the following resources):
+  - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
+  - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
+
+- Below are some good references if you want to gain even more knowledge on designing ML systems for production:
+  - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
+  - [TBD]
+
+Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems, which I learnt a lot from. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
+
+### ML System Design Flow
+
+### Debugging ML Systems
+- [TBD]
+
+### Testing ML systems
+
+Machine Learning production software requires a more diverse set of test suites than traditional software:
+<p align="center">
+  <img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/testing.png" title="" width="75%" height="75%">
+   </p>
+
+## ML System Design Topics
 ### Recommendation Systems
 - examples
 - collaboration filtering
@@ -219,10 +255,6 @@ debugging
   - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
 
 
-
-# Machine Learning Design
-## ML at Scale
-other: chip h
 ## ML at Companies
 - ML at LinkedIn
 - discover, HST, Relevance
@@ -231,7 +263,7 @@ other: chip h
 - AI behind linkedin Feed
 - Follow feed
 - knowledge graph
--
+
 - ML at Google
     - ML pipelines with TFX and KubeFlow
     - [How Google Search works](https://www.google.com/search/howsearchworks/)
