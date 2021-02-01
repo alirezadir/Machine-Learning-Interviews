@@ -6,29 +6,29 @@ This repo aims to be an enlightening guideline to prepare for **Machine Learning
 
 At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings.
 
-My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Dcience" or "ML research scientist" have different structure, some of the modules reviewed can be still useful. For more understanding about diff
+My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures, some of the modules reviewed can be still useful. For more understanding about different technical roles within ML umbreall you can refer to [Link]
 
 The following components are the most common interview modules that I found for ML engineer roles at different companies. We will go through them one by one and share how one can prepare.
 
 # 1. General Coding (Algorithms and Data Structures) Interview :computer:
 As an ML engineer, you're first expected to have a good understanding of general software engineering concepts, and in particular, basic algorithms and data structure.
 
-Depending on the company and seniority level, there is usually one or two rounds of general coding interviews. The general coding interview is very similar to SW engineer coding interviews, and one can get prepared for this one same as other SW engineering roles.
+Depending on the company and seniority level, there are usually one or two rounds of general coding interviews. The general coding interview is very similar to SW engineer coding interviews, and one can get prepared for this one same as other SW engineering roles.
 
 ## Leetcode
 
-At this time, [leetcode](https://leetcode.com/) is the most popular place to practice coding questions. I practived with around 350 problems, which were roughly distributed as **55% Medium, 35% Easy, and 15% Hard** problems. You can find some information on the questions that I practiced in [Ma Leet Sheet](https://docs.google.com/spreadsheets/d/1A8GIgCIn7gvnwE-ZBymI-4-5_ZxQfyeQu99N6f5gEGk/edit#gid=656844248) - Yea I tried to have a little bit fun with it here and there to make the pain easier to carry :D (I will write on my apporach to leetcode in future.)
+At this time, [leetcode](https://leetcode.com/) is the most popular place to practice coding questions. I practiced with around 350 problems, which were roughly distributed as **55% Medium, 35% Easy, and 15% Hard** problems. You can find some information on the questions that I practiced in [Ma Leet Sheet](https://docs.google.com/spreadsheets/d/1A8GIgCIn7gvnwE-ZBymI-4-5_ZxQfyeQu99N6f5gEGk/edit#gid=656844248) - Yea I tried to have a little bit fun with it here and there to make the pain easier to carry :D (I will write on my approach to leetcode in the future.)
 
 ## Educative.io
 
-I was introduced to [educative.io](https://www.educative.io/) by a friend of mine, amd soon found it super useful in understanding the concepts of CS algorithms in more depth via their nice visualizations as well as categorizations.
+I was introduced to [educative.io](https://www.educative.io/) by a friend of mine, and soon found it super useful in understanding the concepts of CS algorithms in more depth via their nice visualizations as well as categorizations.
 In particular, I found the [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) pretty helpful in organizing my mind on approaching interview questions with similar patterns. And the [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) with a great categorization of DP patterns made tackling DP problems a piece of cake even though I wa initially scared!
 
 ## Interview Kickstart
-As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit on myself and took [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my sklillsets for the main interviews. **Remember:** Interviewing is a skill and the more skillful you are, the better the resulst will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions with [Nick](https://www.linkedin.com/in/nickcam/).
+As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit in myself and took the [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my skillsets for the main interviews. **Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions with [Nick](https://www.linkedin.com/in/nickcam/).
 
 
-# 2. ML Coding :robot:
+# 2. ML/Data Coding :robot:
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 - k-means clustering
 - k-nearest neighbors
@@ -52,7 +52,7 @@ ML coding module may or may not exist in particular companies interviews. The go
 
 
 # 3. ML Depth
-ML depth interviews typically aim to measure your depth level of knowledge in both theoretical and practical machine learning. Although this may sound scary at the beginning, this could be potentially one of the easiest rounds if you know well what you have worked on before. In other words, ML depth interviews typically focus on your previous ML related projects, but as deep as possible!
+ML depth interviews typically aim to measure the depth of your knowledge in both theoretical and practical machine learning, in particular in the area that you claim you have worked on. Although this may sound scary at the beginning, this could be potentially one of the easiest rounds if you know well what you have worked on before. In other words, ML depth interviews typically focus on your previous ML related projects, but as deep as possible!
 
 Typically these sessions start with going through one of your past projects (which depending on the company, it could be either your or the interviewer's choice). It generally starts as a high level discussion, and the interviewer gradually dives deeper in one or multiple aspects of the project, sometimes until you get stuck (so it's totally ok to get stuck, maybe just not too early!).
 
@@ -73,9 +73,9 @@ The best way to prepare for this interview is to review your notes from ML cours
 - [Udacity's deep learning nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) or  [Coursera's Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) (for deep learning)
 
 
-If you already know the concepts, teh following resources are pretty useful for a quick review of different concepts:
+If you already know the concepts, the following resources are pretty useful for a quick review of different concepts:
 - [StatQuest Machine Learning videos](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
-- [StatQuest Statistics](https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) (for statistics review - most useful for Data Science rols)
+- [StatQuest Statistics](https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) (for statistics review - most useful for Data Science roles)
 - [Machine Learning cheatsheets](https://ml-cheatsheet.readthedocs.io/en/latest/)
 - [Chris Albon's ML falshcards](https://machinelearningflashcards.com/)
 
@@ -147,7 +147,7 @@ Below are the most important topics to cover:
 ### Unsupervised learning
   - Clustering
     - Centriod models: k-means clustering
-    - Conenctivity models: Hierarchical clustering
+    - Connectivity models: Hierarchical clustering
     - Density models: DBSCAN
   - Gaussian Mixture Models
   - Latent semantic analysis
@@ -236,17 +236,17 @@ For more insight on system design interview you can e.g. check out:
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 - [System design primer](https://github.com/donnemartin/system-design-primer)
 
-Below is a deisgn flow that I would recommend:
+Below is a design flow that I would recommend:
 
 <p align="center">
   <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="40%" height="40%">
 </p>
 
 ## ML System Design Topics
-I observed there are certain set of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
+I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
 ### Recommendation Systems
-- Collaboration Filtering (CF)
+- Collaborative Filtering (CF)
     - user based, item based
     - Cold start problem
     - Matrix factorization
