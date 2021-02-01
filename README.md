@@ -1,4 +1,4 @@
-# :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener,artificialintelligence,machinelearning,interviews,design)
+# :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
 
 :label: Note: This repo is still under development, and all feedback and contribution are very welcome :blush:
 
