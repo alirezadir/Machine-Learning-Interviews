@@ -216,7 +216,7 @@ This is one of my favorite interviews in which you can shine bright and uplevel 
 
 - Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 <p align="center">
-<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="95%" height="95%">
+<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="70%" height="70%">
 </p>
 
 - For more insight on different components above you can check out the following resources):
@@ -239,7 +239,7 @@ For more insight on system design interview you can e.g. check out:
 Below is a deisgn flow that I would recommend:
 
 <p align="center">
-  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="70%" height="70%">
+  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="40%" height="40%">
 </p>
 
 ## ML System Design Topics
