@@ -1,4 +1,4 @@
-# :orange_book: An Enlightening Guide to Machine Learning Interviews :robot: :computer:
+# :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot:
 
 :label: Note: This repo is still under development, and all feedback and contribution are very welcome :blush:
 
@@ -239,7 +239,7 @@ For more insight on system design interview you can e.g. check out:
 Below is a deisgn flow that I would recommend:
 
 <p align="center">
-  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="100%" height="100%">
+  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="70%" height="70%">
 </p>
 
 ## ML System Design Topics
