@@ -236,7 +236,7 @@ For more insight on system design interview you can e.g. check out:
 Below is a deisgn flow that I would recommend:
 
 <p align="center">
-  <img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/testing.png" title="" width="75%" height="75%">
+  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="75%" height="75%">
 </p>
 
 
