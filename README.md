@@ -1,13 +1,16 @@
 # :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
 
-:label: Note: This repo is under continous development, and any feedback and contribution are very welcome :blush: 
+:label: Notes: 
+* This repo is under continous development, and any feedback and contribution are very welcome :blush: 
 **If you'd like to contribute**, please make a pull request with your suggested changes). 
 
-This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI technical interviews**. It has compiled based on my personal experience and notes from my own ML interview preparation early 2020, when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
+* This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI technical interviews**. It has compiled based on my personal experience and notes from my own ML interview preparation early 2020, when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
 
-At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings.
+* At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings.
 
-My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures, some of the modules reviewed here can be still useful. For more understanding about different technical roles within ML umbreall you can refer to [Link]
+* My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures, some of the modules reviewed here can be still useful. For more understanding about different technical roles within ML umbreall you can refer to [Link]
+
+* As a supplemntary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
 
 The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare.
 
