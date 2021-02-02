@@ -1,6 +1,6 @@
 # :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
 
-:label: Note: This repo is still under development, and all feedback and contribution are very welcome :blush:
+:label: Note: This repo is under continous development, and any feedback and contribution are very welcome :blush: (For contribution, please make a pull request with your suggested changes). 
 
 This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI interviews**. It has been developed based on my personal experience and notes during my own ML interview preparation early 2020, when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
 
