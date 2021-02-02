@@ -2,7 +2,7 @@
 
 :label: Note: This repo is still under development, and all feedback and contribution are very welcome :blush:
 
-This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI interviews**. It has been developed based on my personal experience and notes during my own ML interview preparation early 2020 (right at the beginning of COVID19 :D), when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist) , and Roku.
+This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI interviews**. It has been developed based on my personal experience and notes during my own ML interview preparation early 2020, when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
 
 At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings.
 
