@@ -1,4 +1,4 @@
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=alirezadira&hashtags=artificialintelligence,machinelearning,interviews,design)
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40alirezadira)](https://twitter.com/alirezadira)
 
 [![Build Status](https://travis-ci.com/username/projectname.svg?branch=master)](https://travis-ci.com/username/projectname)
