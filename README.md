@@ -1,4 +1,12 @@
-# :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20Interview%20Guide&url=https://github.com/alirezadir/machine-learning-interview-enlightener&via=froala&hashtags=artificialintelligence,machinelearning,interviews,design)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40alirezadira)](https://twitter.com/alirezadira)
+
+[![Build Status](https://travis-ci.com/username/projectname.svg?branch=master)](https://travis-ci.com/username/projectname)
+[![codecov](https://codecov.io/gh/cam-barts/ObeyTheTestingGoat/branch/master/graph/badge.svg)](https://codecov.io/gh/cam-barts/ObeyTheTestingGoat)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/LICENSE)
+
+# :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: 
 
 :label: Notes: 
 * This repo is under continous development, and any feedback and contribution are very welcome :blush: 
