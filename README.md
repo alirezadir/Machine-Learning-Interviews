@@ -18,7 +18,7 @@
 
 * My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures, some of the modules reviewed here can be still useful. For more understanding about different technical roles within ML umbrella you can refer to [Link]
 
-* As a supplemntary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
+* As a supplementary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
 
 The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare.
 
