@@ -22,7 +22,13 @@
 
 The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare.
 
-# 1. General Coding (Algorithms and Data Structures) Interview :computer:
+
+1. [General Coding](#ml)
+2. [ML at Companies](#ml-at-companies)
+
+
+# 1. General Coding (Algorithms and Data Structures) Interview :computer: 
+
 As an ML engineer, you're first expected to have a good understanding of general software engineering concepts, and in particular, basic algorithms and data structure.
 
 Depending on the company and seniority level, there are usually one or two rounds of general coding interviews. The general coding interview is very similar to SW engineer coding interviews, and one can get prepared for this one same as other SW engineering roles.
@@ -37,7 +43,9 @@ I was introduced to [educative.io](https://www.educative.io/) by a friend of min
 In particular, I found the [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) pretty helpful in organizing my mind on approaching interview questions with similar patterns. And the [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) with a great categorization of DP patterns made tackling DP problems a piece of cake even though I wa initially scared!
 
 ## Interview Kickstart
-As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit in myself and took the [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my skillsets for the main interviews. **Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions with [Nick](https://www.linkedin.com/in/nickcam/).
+As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit in myself and took the [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my skillsets for the main interviews. 
+
+**Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions.
 
 
 # 2. ML/Data Coding :robot:
