@@ -9,12 +9,12 @@
 # :bulb: An Enlightening Guide to Machine Learning Interviews :orange_book: :computer: :robot: 
 
 :label: Notes: 
-* This repo is under continous development, and any feedback and contribution are very welcome :blush: 
+* This repo is under continuous development, and any feedback and contribution are very welcome :blush: 
 **If you'd like to contribute**, please make a pull request with your suggested changes). 
 
 * This repo aims to be an enlightening guideline to prepare for **Machine Learning / AI technical interviews**. It has compiled based on my personal experience and notes from my own ML interview preparation early 2020, when I received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
 
-* At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different namings.
+* At the time I'm putting these notes together, machine learning interviews at different companies do not follow a unique structure unlike software engineering interviews. However, I found some of the components very similar to each other, although under different naming.
 
 * My preparation was focused mostly for *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures, some of the modules reviewed here can be still useful. For more understanding about different technical roles within ML umbrella you can refer to [Link]
 
@@ -44,10 +44,10 @@ At this time, [leetcode](https://leetcode.com/) is the most popular place to pra
 ## Educative.io
 
 I was introduced to [educative.io](https://www.educative.io/) by a friend of mine, and soon found it super useful in understanding the concepts of CS algorithms in more depth via their nice visualizations as well as categorizations.
-In particular, I found the [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) pretty helpful in organizing my mind on approaching interview questions with similar patterns. And the [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) with a great categorization of DP patterns made tackling DP problems a piece of cake even though I wa initially scared!
+In particular, I found the [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) pretty helpful in organizing my mind on approaching interview questions with similar patterns. And the [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) with a great categorization of DP patterns made tackling DP problems a piece of cake even though I was initially scared!
 
 ## Interview Kickstart
-As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit in myself and took the [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my skillsets for the main interviews. 
+As I had never taken an algorithms course before and this was my first preparation for coding interviews, I decided to invest a bit in myself and took the [interview kickstart](https://www.interviewkickstart.com/)'s  technical interview prep course. In particular, my favorites were algorithms classes taught by [Omkar](https://www.linkedin.com/in/omkar-deshpande-2013588/), who dived deep in algorithms with his unique approach, the mock interviews, which well prepared my skill-sets for the main interviews. 
 
 **Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions.
 
@@ -146,10 +146,9 @@ Below are the most important topics to cover:
       - RMSprop
       - ADAM
   - Loss functions
-    - Logistic Loss fcn
-    - Cross Entropy (formula)
+    - Logistic Loss function 
+    - Cross Entropy (remember formula as well)
     - Hinge loss (SVM)
-
 
 - Feature selection
   - Feature importance
@@ -170,7 +169,7 @@ Below are the most important topics to cover:
 
 ### Unsupervised learning
   - Clustering
-    - Centriod models: k-means clustering
+    - Centroid models: k-means clustering
     - Connectivity models: Hierarchical clustering
     - Density models: DBSCAN
   - Gaussian Mixture Models
@@ -234,7 +233,7 @@ Below are the most important topics to cover:
 # <a name="ml-sys"></a>  5. Machine Learning System Design
 
 ## Designing ML systems for production
-This is one of my favorite interviews in which you can shine bright and uplevel your career. I'd like to mention the following important notes:
+This is one of my favorite interviews in which you can shine bright and up-level your career. I'd like to mention the following important notes:
 
 - Remember, the goal of ML system design interview is NOT to measure your deep and detailed knowledge of different ML algorithms, but your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
@@ -246,25 +245,74 @@ This is one of my favorite interviews in which you can shine bright and uplevel 
 - For more insight on different components above you can check out the following resources):
   - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
   - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
-
-- Below are some good references if you want to gain even more knowledge on designing ML systems for production:
   - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
-  - [TBD]
+  - Stanford course on ML system design [TBA]
 
 Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems, which I learnt a lot from. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
 
-### ML System Design Flow
+## ML System Design Flow
 Approaching an ML system design problem follows a similar flow to the generic software system design.
-For more insight on system design interview you can e.g. check out:
+For more insight on general system design interview you can e.g. check out:
 - [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 - [System design primer](https://github.com/donnemartin/system-design-primer)
 
 Below is a design flow that I would recommend:
 
-<p align="center">
-  <img src="https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/images/system_design_flow.png" title="" width="40%" height="40%">
-</p>
+1. Problem Description
+    - What does it mean? 
+    - Use cases 
+    - Requirements
+    - Assumptions 
+2. Do we need ML to solve this problem? 
+    - Trade off between impact and cost
+      - Costs: Data collection, data annotation, compute 
+    - if Yes, go to the next topic. If No, follow a general system design flow. 
+3. ML Metrics 
+      - Accuracy metrics: 
+          - imbalanced data?
+      - Latency 
+      - Problem specific metric (e.g. CTR)
+4. Data
+    - Needs 
+        - type (e.g. image, text, video, etc) and volume
+    - Sources
+        - availability and cost 
+    - Labelling (if needed)
+      - labeling cost  
+5. MVP Logic 
+    - Model based vs rule based logic 
+        - Pros and cons, and decision 
+          -  Note: Always start as simple as possible and iterate over 
+    - Propose a simple model (e.g. a binary logistic regression classifier)
+    - Features/ Signals (if needed)
+      - what to chose as and how to chose features 
+      - feature representation 
+6. Training (if needed)
+      - data splits (train, dev, test)
+        - portions
+        - how to chose a test set 
+      - debugging 
+    - Iterate over MVP model (if needed)
+      - data augmentation  
+7. Inference (online)
+    - Data processing and verification 
+    - Prediction module 
+    - Serving infra 
+    - Web app 
+8. Scaling
+  - Scaling for increased demand (same as in distributed systems)
+      - Scaling web app and serving system 
+      - Data partitioning 
+  - Data parallelism 
+  - Model parallelism 
+9. A/B test and deployment
+    - How to A/B test? 
+      - what portion of users?
+      - control and test groups 
+10. Monitoring and Updates 
+    - seasonality   
+
 
 ## ML System Design Topics
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
@@ -327,7 +375,7 @@ Note: The reason I have more topics here is because this was my focus in my own 
   - depending on the dataset sizes and similarities
 
 
-## ML at Big Companies
+## ML Systems at Big Companies 
 - AI at LinkedIn
   - [Intro to AI at Linkedin](https://engineering.linkedin.com/blog/2018/10/an-introduction-to-ai-at-linkedin)
   - [Building The LinkedIn Knowledge Graph](https://engineering.linkedin.com/blog/2016/10/building-the-linkedin-knowledge-graph)
@@ -352,25 +400,22 @@ Note: The reason I have more topics here is because this was my focus in my own 
   - [Deploying Machine Learning Models as API using AWS](https://medium.com/towards-artificial-intelligence/deploying-machine-learning-models-as-api-using-aws-a25d05518084)
   - [Serverless Machine Learning On AWS Lambda](https://medium.com/swlh/how-to-deploy-your-scikit-learn-model-to-aws-44aabb0efcb4)
 -  ML at Facebook
-   -  [ML](https://www.youtube.com/watch?v=C4N1IZ1oZGw)
+   -  [Machine Learning at Facebook Talk](https://www.youtube.com/watch?v=C4N1IZ1oZGw)
    -  [Scaling AI Experiences at Facebook with PyTorch](https://www.youtube.com/watch?v=O8t9xbAajbY)
    -  [Understanding text in images and videos](https://ai.facebook.com/blog/rosetta-understanding-text-in-images-and-videos-with-machine-learning/)
    -  [Protecting people](https://ai.facebook.com/blog/advances-in-content-understanding-self-supervision-to-protect-people/)
    -  Ads
-   - Ad CTR prediction
-     - [Practical Lessons from Predicting Clicks on Ads at Facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
-     - Other [Ad papers](https://github.com/wzhe06/Ad-papers)
+      - Ad CTR prediction
+      - [Practical Lessons from Predicting Clicks on Ads at Facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
    - Newsfeed Ranking
      - [How Facebook News Feed Works](https://techcrunch.com/2016/09/06/ultimate-guide-to-the-news-feed/)
      - [How does Facebook’s advertising targeting algorithm work?](https://quantmar.com/99/How-does-facebooks-advertising-targeting-algorithm-work)
      - [ML and Auction Theory](https://www.youtube.com/watch?v=94s0yYECeR8)
      - [Serving Billions of Personalized News Feeds with AI - Meihong Wang](https://www.youtube.com/watch?v=wcVJZwO_py0&t=80s)
      - [Generating a Billion Personal News Feeds](https://www.youtube.com/watch?v=iXKR3HE-m8c&list=PLefpqz4O1tblTNAtKaSIOU8ecE6BATzdG&index=2)
-     - Edgerank for news feed facebook
      - [Instagram feed ranking](https://www.facebook.com/atscaleevents/videos/1856120757994353/?v=1856120757994353)
      - [How Instagram Feed Works](https://techcrunch.com/2018/06/01/how-instagram-feed-works/)
    - [Photo search](https://engineering.fb.com/ml-applications/under-the-hood-photo-search/)
-   - Fake news detection
    - Social graph search
    - Recommendation
      - [Recommending items to more than a billion people](https://engineering.fb.com/core-data/recommending-items-to-more-than-a-billion-people/)
