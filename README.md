@@ -20,14 +20,18 @@
 
 * As a supplemntary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
 
-The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare.
+The following components are the most commonly used interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
+
+1. [General Coding Interview (Algorithms and Data Structures)](#coding)
+2. [ML/Data Coding](#ml-coding)
+3. [ML Depth](#depth)
+3. [ML Breadth](#breadth)
+5. [Machine Learning System Design](#ml-sys)
 
 
-1. [General Coding](#ml)
-2. [ML at Companies](#ml-at-companies)
 
 
-# 1. General Coding (Algorithms and Data Structures) Interview :computer: 
+# <a name="coding"></a> 1. General Coding Interview (Algorithms and Data Structures) :computer: 
 
 As an ML engineer, you're first expected to have a good understanding of general software engineering concepts, and in particular, basic algorithms and data structure.
 
@@ -48,7 +52,7 @@ As I had never taken an algorithms course before and this was my first preparati
 **Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. Another part of the program that I learned a lot from (while many others ignored :D), was career coaching sessions.
 
 
-# 2. ML/Data Coding :robot:
+# <a name="ml-coding"></a> 2. ML/Data Coding :robot:
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 - k-means clustering
 - k-nearest neighbors
@@ -71,7 +75,7 @@ ML coding module may or may not exist in particular companies interviews. The go
 - You can find some sample codes (or links to ones) in the [ML_Coding_Problems Notebook](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/Notebooks/ML_Coding_Problems.ipynb).
 
 
-# 3. ML Depth
+# <a name="depth"></a> 3. ML Depth
 ML depth interviews typically aim to measure the depth of your knowledge in both theoretical and practical machine learning, in particular in the area that you claim you have worked on. Although this may sound scary at the beginning, this could be potentially one of the easiest rounds if you know well what you have worked on before. In other words, ML depth interviews typically focus on your previous ML related projects, but as deep as possible!
 
 Typically these sessions start with going through one of your past projects (which depending on the company, it could be either your or the interviewer's choice). It generally starts as a high level discussion, and the interviewer gradually dives deeper in one or multiple aspects of the project, sometimes until you get stuck (so it's totally ok to get stuck, maybe just not too early!).
@@ -82,7 +86,7 @@ The best advice to prepare for this interview is to know the details of what you
 
 - [TBD]
 
-# 4. ML Breadth/Fundamentals
+# <a name="breadth"></a> 4. ML Breadth/Fundamentals
 As the name suggests, this interview is intended to evaluate your general knowledge of ML concepts both from theoretical and practical perspectives. Unlike ML depth interviews, the breadth interviews tend to follow a pretty similar structure and coverage amongst different interviewers and interviewees.
 
 The best way to prepare for this interview is to review your notes from ML courses as well some high quality online courses and material. In particular, I found the following resources pretty helpful.
@@ -227,7 +231,7 @@ Below are the most important topics to cover:
   - Similarity/dissimilarity metrics
     - Euclidean, Manhattan, Cosine, Mahalanobis (advanced)
 
-# 5. Machine Learning System Design
+# <a name="ml-sys"></a>  5. Machine Learning System Design
 
 ## Designing ML systems for production
 This is one of my favorite interviews in which you can shine bright and uplevel your career. I'd like to mention the following important notes:
