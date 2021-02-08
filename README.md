@@ -20,9 +20,13 @@
 
 * As a supplemntary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
 
-The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare.
+The following components are the most common interview modules that I found for technical ML roles at different companies. We will go through them one by one and share how one can prepare. 
 
-# 1. General Coding (Algorithms and Data Structures) Interview :computer:
+[1. General Coding](#coding)
+
+
+# <a name="coding"></a>General Coding (Algorithms and Data Structures) Interview :computer: 
+
 As an ML engineer, you're first expected to have a good understanding of general software engineering concepts, and in particular, basic algorithms and data structure.
 
 Depending on the company and seniority level, there are usually one or two rounds of general coding interviews. The general coding interview is very similar to SW engineer coding interviews, and one can get prepared for this one same as other SW engineering roles.
