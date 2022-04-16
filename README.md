@@ -256,6 +256,7 @@ For more insight on general system design interview you can e.g. check out:
 - [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 - [System design primer](https://github.com/donnemartin/system-design-primer)
+- [Deep Learning Interviews](https://www.amazon.in/Deep-Learning-Interviews-interview-questions/dp/1916243568)
 
 Below is a design flow that I would recommend:
 
