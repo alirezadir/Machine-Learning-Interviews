@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/LICENSE)
 
 # :bulb: A Guide for Machine Learning Interviews (FAANG Companies):robot: 
-![60491bdb8da258eece80e9ab8650d522](https://user-images.githubusercontent.com/5262877/163661868-882bed1f-a6d4-4867-861b-c015d2ab6faf.jpeg)
+<img width="960" alt="Neutral  Interview Thumbnail" src="https://user-images.githubusercontent.com/5262877/163662993-e893d454-6cdf-4427-af78-dafaf9e9efa5.png">
 
 
 This repo aims to provide guidelines to prepare for interviews for **Machine Learning (AI) engineer** roles at big tech companies (in particular FAANG). It has compiled based on authors personal experience and notes from his own interview preparation in 2020, when he received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
