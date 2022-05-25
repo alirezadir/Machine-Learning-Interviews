@@ -16,74 +16,76 @@ This is one of my favorite interviews in which you can shine bright and up-level
   - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
   - Stanford course on ML system design [TBA]
 
-Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems, which I learnt a lot from. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
 
-## ML System Design Flow
+
+# 1. ML System Design Flow
 Approaching an ML system design problem follows a similar flow to the generic software system design.
-For more insight on general system design interview you can e.g. check out:
-- [Grokking the System Design Interview
+For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
-- [System design primer](https://github.com/donnemartin/system-design-primer)
-- [Deep Learning Interviews](https://www.amazon.in/Deep-Learning-Interviews-interview-questions/dp/1916243568)
+and [System design primer](https://github.com/donnemartin/system-design-primer).
 
-Below is a design flow that I would recommend:
+I developed the following design flow that worked pretty well during my own interviews:
 
-1. Problem Description
+1. Problem Formulation 
     - What does it mean? 
     - Use cases 
     - Requirements
     - Assumptions 
-2. Do we need ML to solve this problem? 
-    - Trade off between impact and cost
-      - Costs: Data collection, data annotation, compute 
-    - if Yes, go to the next topic. If No, follow a general system design flow. 
-3. ML Metrics 
+    - Do we need ML to solve this problem? 
+    -   Trade off between impact and cost
+        -   Costs: Data collection, data annotation, compute 
+        - if Yes, go to the next topic. If No, follow a general system design flow. 
+3. ML Metrics (Offline and Online)
       - Accuracy metrics: 
           - imbalanced data?
       - Latency 
       - Problem specific metric (e.g. CTR)
-4. Data
+
+5. MVP Logic (High Level Design)
+    - Model based vs rule based logic 
+        - Pros and cons, and decision 
+          -  Note: Always start as simple as possible and iterate over 
+    - Propose a simple model (e.g. a binary logistic regression classifier)
+    
+4. Data Pipeline 
     - Needs 
         - type (e.g. image, text, video, etc) and volume
     - Sources
         - availability and cost 
     - Labelling (if needed)
       - labeling cost  
-5. MVP Logic 
-    - Model based vs rule based logic 
-        - Pros and cons, and decision 
-          -  Note: Always start as simple as possible and iterate over 
-    - Propose a simple model (e.g. a binary logistic regression classifier)
-    - Features/ Signals (if needed)
+    - Feature Generation 
       - what to chose as and how to chose features 
       - feature representation 
-6. Training (if needed)
+
+6. Training 
       - data splits (train, dev, test)
         - portions
         - how to chose a test set 
       - debugging 
     - Iterate over MVP model (if needed)
       - data augmentation  
+
 7. Inference (online)
     - Data processing and verification 
     - Prediction module 
     - Serving infra 
     - Web app 
-8. Scaling
-  - Scaling for increased demand (same as in distributed systems)
+
+8. Scaling, Monitoring, and Updates 
+    - Scaling for increased demand (same as in distributed systems)
       - Scaling web app and serving system 
       - Data partitioning 
-  - Data parallelism 
-  - Model parallelism 
-9. A/B test and deployment
-    - How to A/B test? 
+    - Data parallelism 
+    - Model parallelism 
+    - A/B test and deployment
+      - How to A/B test? 
       - what portion of users?
       - control and test groups 
-10. Monitoring and Updates 
-    - seasonality   
 
+# ML System Design Sample Questions 
 
-## ML System Design Topics
+# ML System Design Topics
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
 ### Recommendation Systems
@@ -143,8 +145,8 @@ Note: The reason I have more topics here is because this was my focus in my own 
 - How to do it
   - depending on the dataset sizes and similarities
 
-
-## ML Systems at Big Companies 
+Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
+# ML Systems at Big Companies 
 - AI at LinkedIn
   - [Intro to AI at Linkedin](https://engineering.linkedin.com/blog/2018/10/an-introduction-to-ai-at-linkedin)
   - [Building The LinkedIn Knowledge Graph](https://engineering.linkedin.com/blog/2016/10/building-the-linkedin-knowledge-graph)
