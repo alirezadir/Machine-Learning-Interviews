@@ -26,62 +26,90 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 
 I developed the following design flow that worked pretty well during my own interviews:
 
-1. Problem Formulation 
-    - What does it mean? 
-    - Use cases 
-    - Requirements
-    - Assumptions 
-    - Do we need ML to solve this problem? 
-    -   Trade off between impact and cost
+## 1. Problem Formulation 
+   - What does it mean? 
+   - Use cases 
+   - Requirements
+   - Assumptions 
+   - Do we need ML to solve this problem? 
+   -   Trade off between impact and cost
         -   Costs: Data collection, data annotation, compute 
         - if Yes, go to the next topic. If No, follow a general system design flow. 
-3. ML Metrics (Offline and Online)
-      - Accuracy metrics: 
-          - imbalanced data?
-      - Latency 
-      - Problem specific metric (e.g. CTR)
+## 2. Metrics (Offline and Online)
+  - Accuracy metrics: 
+    - imbalanced data?
+  - Latency 
+  - Problem specific metric (e.g. CTR)
 
-5. MVP Logic (High Level Design)
-    - Model based vs rule based logic 
+## 3. MVP Logic and Architectural Components
+   - Model based vs rule based logic 
         - Pros and cons, and decision 
           -  Note: Always start as simple as possible and iterate over 
     - Propose a simple model (e.g. a binary logistic regression classifier)
     
-4. Data Pipeline 
-    - Needs 
-        - type (e.g. image, text, video, etc) and volume
-    - Sources
-        - availability and cost 
-    - Labelling (if needed)
-      - labeling cost  
-    - Feature Generation 
-      - what to chose as and how to chose features 
-      - feature representation 
+## 4. Fetaure Engineering 
+  - what to chose as and how to chose features 
+  - feature representation 
 
-6. Training 
-      - data splits (train, dev, test)
-        - portions
-        - how to chose a test set 
-      - debugging 
-    - Iterate over MVP model (if needed)
-      - data augmentation  
+## 5. Data Pipeline 
+  - Needs 
+    - type (e.g. image, text, video, etc) and volume
+  - Sources
+      - availability and cost 
+  - Labelling (if needed)
+    - labeling cost  
+  - Feature Generation 
+  - data splits (train, dev, test)
+    - portions
+    - how to chose a test set 
 
-7. Inference (online)
-    - Data processing and verification 
-    - Prediction module 
-    - Serving infra 
-    - Web app 
+    
+## 6. Model Development, Training, and Offline Evaluation 
+  - Model 1 architecture  
+  - Model 2 architecture 
+  - ...
+  - Model training procedure 
+  - Model offline evaluations 
+  - Debugging 
+  - Iterate over MVP model
+    - Model Selection 
+    - data augmentation 
 
-8. Scaling, Monitoring, and Updates 
-    - Scaling for increased demand (same as in distributed systems)
-      - Scaling web app and serving system 
-      - Data partitioning 
-    - Data parallelism 
-    - Model parallelism 
-    - A/B test and deployment
-      - How to A/B test? 
-      - what portion of users?
-      - control and test groups 
+## 7. Inference/Prediction Serivce (online)
+  - Data processing and verification 
+  - Prediction serivce 
+  - Serving infra
+  - Web app 
+  - Batch vs Online prediction 
+  - ML on the Edge (on-device AI)
+    - Model Compression 
+      - Quantization 
+      - Pruning 
+      - Knowledge distillation 
+      - Factorization 
+
+## 8. Online Testing and Model Deployment 
+- A/B Test 
+  - How to A/B test? 
+    - what portion of users?
+    - control and test groups 
+- Bandits 
+- Shadow deployment 
+- Canary release 
+
+
+## 9. Scaling, Monitoring, and Updates 
+  - Scaling for increased demand (same as in distributed systems)
+    - Scaling web app and serving system 
+    - Data partitioning 
+    - Data parallelism (for training)
+    - Model parallelism (for inference)
+  - Monitoring: 
+    - Data distribution shifts 
+    - Monitoring metrics 
+    - System failures 
+      - SW system failure 
+      - ML system failure 
 
 # ML System Design Sample Questions 
 
