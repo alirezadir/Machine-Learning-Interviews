@@ -44,20 +44,34 @@ I developed the following design flow that worked pretty well during my own inte
 ## 3. MVP Logic and Architectural Components
    - Model based vs rule based logic 
         - Pros and cons, and decision 
-          -  Note: Always start as simple as possible and iterate over 
+          -  Note: Always start as simple as possible (KISS) and iterate over 
     - Propose a simple model (e.g. a binary logistic regression classifier)
     
 ## 4. Fetaure Engineering 
-  - what to chose as and how to chose features 
-  - feature representation 
+  - How to chose features?
+    - Define big actors, actor specific features, and cross features  
+  - feature representation
+    - Embeddings 
+    - Encoding categirical features 
+    - Positional embeddings 
+  - Missing Values 
+  - Normalization 
+  - Feature importance 
+ 
 
 ## 5. Data Pipeline 
   - Needs 
     - type (e.g. image, text, video, etc) and volume
   - Sources
       - availability and cost 
-  - Labelling (if needed)
-    - labeling cost  
+  - Sampling 
+    - Sampling methods (random, stratified, reservoir, importance sampling)
+  - Labelling (for supervised)
+    - Labling methods
+      - Extract from data (natural labels)
+      - Human annotation (super costly)
+      - Semi-supervised methods for labeling (e.g. label propagation)
+    - Labeling cost
   - Feature Generation 
   - data splits (train, dev, test)
     - portions
@@ -110,6 +124,7 @@ I developed the following design flow that worked pretty well during my own inte
     - System failures 
       - SW system failure 
       - ML system failure 
+  - Continual training 
 
 # ML System Design Sample Questions 
 
