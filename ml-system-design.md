@@ -7,7 +7,7 @@ This is one of my favorite interviews in which you can shine bright and up-level
 
 - Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 <p align="center">
-<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="50%" height="50%">
+<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="60%" height="60%">
 </p>
 
 - For more insight on different components above you can check out the following resources):
@@ -29,7 +29,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 I developed the following design flow that worked pretty well during my own interviews:
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/5262877/217638146-637ae0ca-fd8b-4ed3-b136-8f82e5cc8319.png" title="" width="40%" height="40%">
+<img src="https://user-images.githubusercontent.com/5262877/217639552-61a302c1-5193-411e-880e-be3fda7302db.png" title="" width="40%" height="40%">
 </p>
 
 
