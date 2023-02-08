@@ -1,4 +1,4 @@
-# <a name="ml-sys"></a>  5. Machine Learning System Design
+# <a name="ml-sys"></a>  Machine Learning System Design
 
 ## Designing ML systems for production
 This is one of my favorite interviews in which you can shine bright and up-level your career. I'd like to mention the following important notes:
@@ -7,7 +7,7 @@ This is one of my favorite interviews in which you can shine bright and up-level
 
 - Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 <p align="center">
-<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="70%" height="70%">
+<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="50%" height="50%">
 </p>
 
 - For more insight on different components above you can check out the following resources):
@@ -24,7 +24,14 @@ For more insight on general system design interview you can e.g. check out [Grok
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 and [System design primer](https://github.com/donnemartin/system-design-primer).
 
+
+
 I developed the following design flow that worked pretty well during my own interviews:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/5262877/217638146-637ae0ca-fd8b-4ed3-b136-8f82e5cc8319.png" title="" width="40%" height="40%">
+</p>
+
 
 ## 1. Problem Formulation 
    - What does it mean? 
@@ -34,12 +41,14 @@ I developed the following design flow that worked pretty well during my own inte
    - Do we need ML to solve this problem? 
    -   Trade off between impact and cost
         -   Costs: Data collection, data annotation, compute 
-        - if Yes, go to the next topic. If No, follow a general system design flow. 
+        - if Yes, we choose an ML system to design. If No, follow a general system design flow. 
 ## 2. Metrics (Offline and Online)
-  - Accuracy metrics: 
-    - imbalanced data?
-  - Latency 
-  - Problem specific metric (e.g. CTR)
+  - Offline metrics  
+    - Accuracy metrics: 
+      - imbalanced data?
+    - Latency 
+    - Problem specific metric (e.g. CTR)
+  - Online metrics 
 
 ## 3. MVP Logic and Architectural Components
    - Model based vs rule based logic 
@@ -47,7 +56,7 @@ I developed the following design flow that worked pretty well during my own inte
           -  Note: Always start as simple as possible (KISS) and iterate over 
     - Propose a simple model (e.g. a binary logistic regression classifier)
     
-## 4. Fetaure Engineering 
+## 4. Feature Engineering 
   - How to chose features?
     - Define big actors, actor specific features, and cross features  
   - feature representation
@@ -89,7 +98,7 @@ I developed the following design flow that worked pretty well during my own inte
     - Model Selection 
     - data augmentation 
 
-## 7. Inference/Prediction Serivce (online)
+## 7. Inference/Prediction Service (online/batch)
   - Data processing and verification 
   - Prediction serivce 
   - Serving infra
@@ -123,7 +132,12 @@ I developed the following design flow that worked pretty well during my own inte
     - Monitoring metrics 
     - System failures 
       - SW system failure 
+        - dependency, deployment, hardware, downtime    
       - ML system failure 
+        - data distribution diff (test vs online) 
+        - feedback loops 
+        - edge cases  
+        - data distribution changes 
   - Continual training 
 
 # ML System Design Sample Questions 
