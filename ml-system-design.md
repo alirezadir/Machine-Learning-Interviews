@@ -42,12 +42,14 @@ I developed the following design flow that worked pretty well during my own inte
    -   Trade off between impact and cost
         -   Costs: Data collection, data annotation, compute 
         - if Yes, we choose an ML system to design. If No, follow a general system design flow. 
+
 ## 2. Metrics (Offline and Online)
   - Offline metrics  
-    - Accuracy metrics: 
-      - imbalanced data?
+    - Accuracy metrics (precision, recall, F1, AUC ROC, etc)
+      - imbalanced data
     - Latency 
     - Problem specific metric (e.g. CTR)
+    - Computational cost (in particular for on-device)
   - Online metrics 
 
 ## 3. MVP Logic and Architectural Components
@@ -57,14 +59,17 @@ I developed the following design flow that worked pretty well during my own inte
     - Propose a simple model (e.g. a binary logistic regression classifier)
     
 ## 4. Feature Engineering 
-  - How to chose features?
-    - Define big actors, actor specific features, and cross features  
-  - feature representation
-    - Embeddings 
-    - Encoding categirical features 
+  - Choosing features
+    - Define big actors (e.g. user, item, context), 
+    - Define actor specific features (e.g. user specific features)
+    - Define cross features (e.g. user-item features)
+  - Feature representation
+    - One hot encoding
+    - Embeddings (for text, image, graphs, users, etc)
+    - Encoding categorical features (one hot, ordinal, count, etc) 
     - Positional embeddings 
   - Missing Values 
-  - Normalization 
+  - Scaling/Normalization 
   - Feature importance 
  
 
@@ -74,17 +79,31 @@ I developed the following design flow that worked pretty well during my own inte
   - Sources
       - availability and cost 
   - Sampling 
-    - Sampling methods (random, stratified, reservoir, importance sampling)
+    - Nonprobablistic sampling   
+    - Probabilistic sampling methods 
+      - random, stratified, reservoir, importance sampling
   - Labelling (for supervised)
     - Labling methods
-      - Extract from data (natural labels)
-      - Human annotation (super costly)
-      - Semi-supervised methods for labeling (e.g. label propagation)
-    - Labeling cost
-  - Feature Generation 
-  - data splits (train, dev, test)
-    - portions
-    - how to chose a test set 
+      - Natural labels (extracted from data e.g. clicks, likes, purchase, etc)   
+      - Human annotation (super costly, slow, privacy issues)
+     - Handliing lack of labels
+      - Programmatic labeling methods (noisy, pros: cost, privacy, adaptive)
+        - Semi-supervised methods (from an initial smaller set of labels e.g. perturbation based)
+        - Weak supervision (encode heuristics e.g. keywords, regex, db, output of other ML models)
+      - Transfer learning: 
+        - pretrain on cheap large data (e.g. GPT-3), 
+        - zero-shot or fine-tune for downstream task  
+      - Active learning
+    - Labeling cost and trade-offs
+  - Data splits (train, dev, test)
+    - Portions
+    - Splitting time-correlated data (split by time)
+    - How to chose a test set?
+    - Data leackage: 
+      - scale after split, 
+      - use only train split for stats, scaling, and missing vals
+  - Class imbalance 
+  - Data augmentation 
 
     
 ## 6. Model Development, Training, and Offline Evaluation 
@@ -129,7 +148,12 @@ I developed the following design flow that worked pretty well during my own inte
     - Model parallelism (for inference)
   - Monitoring: 
     - Data distribution shifts 
+      - covariate, label and concept shifts 
+      - Detection (stats, hypothesis testing)
+      - Correction 
     - Monitoring metrics 
+      - SW system metrics 
+      - ML metrics (accuracy related, predictions, features) 
     - System failures 
       - SW system failure 
         - dependency, deployment, hardware, downtime    
@@ -142,18 +166,27 @@ I developed the following design flow that worked pretty well during my own inte
 
 # ML System Design Sample Questions 
 
-# ML System Design Topics
+## ML System Design Topics
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
 ### Recommendation Systems
+- Recommend the most relevant items to users 
 - Collaborative Filtering (CF)
     - user based, item based
     - Cold start problem
     - Matrix factorization
 - Content based filtering
 
-### NLP
+### Ranking (Ads, newsfeed, etc)
+- CTR prediction
+- Ranking algorithms
 
+### Information Retrieval
+- Search
+  - Pagerank
+  - Autocomplete for search
+
+### NLP
 - Preprocessing
   - Normalization, tokenization, stop words
 - Word Embeddings
@@ -162,7 +195,7 @@ I observed there are certain sets of topics that are frequently brought up or ca
 - NLP specialist topics:
   - Language Modeling
   - Part of speech tagging
-  - POS HMM
+    - POS HMM
     - Viterbi algorithm and beam search
   - Named entity recognition
   - Topic modeling
@@ -178,18 +211,8 @@ I observed there are certain sets of topics that are frequently brought up or ca
     - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
     - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
   - Machine Translation
-    - Seq2seq models, NMT
+    - Seq2seq models, NMT, Transformers 
 
-Note: The reason I have more topics here is because this was my focus in my own interviews
-
-### Ads and Ranking
-- CTR prediction
-- Ranking algorithms
-
-### Information retrieval
-- Search
-  - Pagerank
-  - Autocomplete for search
 
 ### Computer vision
 - Image classification
@@ -202,62 +225,6 @@ Note: The reason I have more topics here is because this was my focus in my own 
 - How to do it
   - depending on the dataset sizes and similarities
 
-Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the subsection [ML at Companies](#ml-at-companies) below.
-# ML Systems at Big Companies 
-- AI at LinkedIn
-  - [Intro to AI at Linkedin](https://engineering.linkedin.com/blog/2018/10/an-introduction-to-ai-at-linkedin)
-  - [Building The LinkedIn Knowledge Graph](https://engineering.linkedin.com/blog/2016/10/building-the-linkedin-knowledge-graph)
-  - [The AI Behind LinkedIn Recruiter search and recommendation systems](https://engineering.linkedin.com/blog/2019/04/ai-behind-linkedin-recruiter-search-and-recommendation-systems)
-  - [A closer look at the AI behind course recommendations on LinkedIn Learning, Part 1](https://engineering.linkedin.com/blog/2020/course-recommendations-ai-part-one)
-  - [A closer look at the AI behind course recommendations on LinkedIn Learning, Part 2](https://engineering.linkedin.com/blog/2020/course-recommendations-ai-part-two)
-  - [Communities AI: Building communities around interests on LinkedIn](https://engineering.linkedin.com/blog/2019/06/building-communities-around-interests)
-  - [Linkedin's follow feed](https://engineering.linkedin.com/blog/2016/03/followfeed--linkedin-s-feed-made-faster-and-smarter)
-  - XNLT for A/B testing
+Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
 
-
-- ML at Google
-    - ML pipelines with TFX and KubeFlow
-    - [How Google Search works](https://www.google.com/search/howsearchworks/)
-      - Page Rank algorithm ([intro to page rank](https://www.youtube.com/watch?v=IKXvSKaI2Ko), [the algorithm that started google](https://www.youtube.com/watch?v=qxEkY8OScYY))
-    - TFX production components
-      - [TFX workshop by Robert Crowe](https://conferences.oreilly.com/artificial-intelligence/ai-ca-2019/cdn.oreillystatic.com/en/assets/1/event/298/TFX_%20Production%20ML%20pipelines%20with%20TensorFlow%20Presentation.pdf)
-    - [Google Cloud Platform Big Data and Machine Learning Fundamentals](https://www.coursera.org/learn/gcp-big-data-ml-fundamentals)
-- Scalable ML using AWS
-  - [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/)
-  - [Deploy a machine learning model with AWS Elastic Beanstalk](https://medium.com/swlh/deploy-a-machine-learning-model-with-aws-elasticbeanstalk-dfcc47b6043e)
-  - [Deploying Machine Learning Models as API using AWS](https://medium.com/towards-artificial-intelligence/deploying-machine-learning-models-as-api-using-aws-a25d05518084)
-  - [Serverless Machine Learning On AWS Lambda](https://medium.com/swlh/how-to-deploy-your-scikit-learn-model-to-aws-44aabb0efcb4)
--  ML at Facebook
-   -  [Machine Learning at Facebook Talk](https://www.youtube.com/watch?v=C4N1IZ1oZGw)
-   -  [Scaling AI Experiences at Facebook with PyTorch](https://www.youtube.com/watch?v=O8t9xbAajbY)
-   -  [Understanding text in images and videos](https://ai.facebook.com/blog/rosetta-understanding-text-in-images-and-videos-with-machine-learning/)
-   -  [Protecting people](https://ai.facebook.com/blog/advances-in-content-understanding-self-supervision-to-protect-people/)
-   -  Ads
-      - Ad CTR prediction
-      - [Practical Lessons from Predicting Clicks on Ads at Facebook](https://quinonero.net/Publications/predicting-clicks-facebook.pdf)
-   - Newsfeed Ranking
-     - [How Facebook News Feed Works](https://techcrunch.com/2016/09/06/ultimate-guide-to-the-news-feed/)
-     - [How does Facebook’s advertising targeting algorithm work?](https://quantmar.com/99/How-does-facebooks-advertising-targeting-algorithm-work)
-     - [ML and Auction Theory](https://www.youtube.com/watch?v=94s0yYECeR8)
-     - [Serving Billions of Personalized News Feeds with AI - Meihong Wang](https://www.youtube.com/watch?v=wcVJZwO_py0&t=80s)
-     - [Generating a Billion Personal News Feeds](https://www.youtube.com/watch?v=iXKR3HE-m8c&list=PLefpqz4O1tblTNAtKaSIOU8ecE6BATzdG&index=2)
-     - [Instagram feed ranking](https://www.facebook.com/atscaleevents/videos/1856120757994353/?v=1856120757994353)
-     - [How Instagram Feed Works](https://techcrunch.com/2018/06/01/how-instagram-feed-works/)
-   - [Photo search](https://engineering.fb.com/ml-applications/under-the-hood-photo-search/)
-   - Social graph search
-   - Recommendation
-     - [Recommending items to more than a billion people](https://engineering.fb.com/core-data/recommending-items-to-more-than-a-billion-people/)
-     - [Social recommendations](https://engineering.fb.com/android/made-in-ny-the-engineering-behind-social-recommendations/)
-   - [Live videos](https://engineering.fb.com/ios/under-the-hood-broadcasting-live-video-to-millions/)
-   - [Large Scale Graph Partitioning](https://engineering.fb.com/core-data/large-scale-graph-partitioning-with-apache-giraph/)
-   - [TAO: Facebook’s Distributed Data Store for the Social Graph](https://www.youtube.com/watch?time_continue=66&v=sNIvHttFjdI&feature=emb_logo) ([Paper](https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf))
-   - [NLP at Facebook](https://www.youtube.com/watch?v=ZcMvffdkSTE)
--  ML at Netflix
-   -  [Recommendation at Netflix](https://www.slideshare.net/moustaki/recommending-for-the-world)
-   -  [Past, Present & Future of Recommender Systems: An Industry Perspective](https://www.slideshare.net/justinbasilico/past-present-future-of-recommender-systems-an-industry-perspective)
-   -  [Deep learning for recommender systems](https://www.slideshare.net/moustaki/deep-learning-for-recommender-systems-86752234)
-   -  [Reliable ML at Netflix](https://www.slideshare.net/justinbasilico/making-netflix-machine-learning-algorithms-reliable)
-   -  [ML at Netflix (Spark and GraphX)](https://www.slideshare.net/SessionsEvents/ehtsham-elahi-senior-research-engineer-personalization-science-and-engineering-group-at-netflix-at-mlconf-sea-50115?next_slideshow=1)
-   -  [Recent Trends in Personalization](https://www.slideshare.net/justinbasilico/recent-trends-in-personalization-a-netflix-perspective)
-   -  [Artwork Personalization @ Netflix](https://www.slideshare.net/justinbasilico/artwork-personalization-at-netflix)
 
