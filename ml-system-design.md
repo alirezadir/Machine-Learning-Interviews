@@ -171,6 +171,7 @@ I developed the following design flow that worked pretty well during my own inte
   - Continual training 
 
 # 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
+Design a:
 * Recommendation System 
   *  Video recommendation (Netflix, Youtube) 
   *  Friend/follower recommendation (Facebook, Twitter)
@@ -192,6 +193,8 @@ I developed the following design flow that worked pretty well during my own inte
 * Proximity service / Yelp
 * Food delivery time  
 * Self-driving car (Perception, Prediction, Planning)
+
+More questions can be found [here](https://huyenchip.com/machine-learning-systems-design/exercises.html). 
  
 # 3. ML System Design Topics <a name="ml-sys-d-t"></a>
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
@@ -244,7 +247,7 @@ I observed there are certain sets of topics that are frequently brought up or ca
 - Image classification
 - Object Tracking
 - Popular architectures (AlexNet, VGG, ResNET)
-- 
+- ...
 
 
 # 4. ML at big tech companies  <a name="ml-sys-d-c"></a>
