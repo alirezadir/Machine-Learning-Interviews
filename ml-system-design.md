@@ -35,13 +35,14 @@ I developed the following design flow that worked pretty well during my own inte
 
 ## 1. Problem Formulation 
    - What does it mean? 
+    - Translate an abstract problem into an ML problem (identify it e.g. as binary classification, multi-classification, unsupervised learning, etc)
    - Use cases 
    - Requirements
    - Assumptions 
    - Do we need ML to solve this problem? 
    -   Trade off between impact and cost
         -   Costs: Data collection, data annotation, compute 
-        - if Yes, we choose an ML system to design. If No, follow a general system design flow. 
+        - if Yes, we choose an ML system to design. If No, follow a general system design flow.  
 
 ## 2. Metrics (Offline and Online)
   - Offline metrics  
@@ -165,7 +166,28 @@ I developed the following design flow that worked pretty well during my own inte
   - Continual training 
 
 # ML System Design Sample Questions 
-
+* Recommendation System 
+  *  Video recommendation (Netflix, Youtube) 
+  *  Friend/follower recommendation (Facebook, Twitter)
+  *  Replacement product recommendation (Instacart)
+  *  Rental recommendation (Airbnb)
+  *  Place recommendation 
+* Newsfeed system (ranking)
+* Search system (retrival, ranking)
+  * Google saerch
+* Ads click predicition system (ranking)
+* Named entity tagging system 
+* Spam/illegal ads detection system
+* Fraud detection system 
+* Autocompletion / Typeahead suggestion system 
+* Ride matching system 
+* Language identification system
+* Chatbot system 
+* Question ansering system
+* Proximity service / Yelp
+* Food delivery time  
+* Self-driving car
+ 
 ## ML System Design Topics
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
@@ -188,7 +210,6 @@ I observed there are certain sets of topics that are frequently brought up or ca
 
 ### NLP
 - Preprocessing
-  - Normalization, tokenization, stop words
 - Word Embeddings
   - Word2Vec, GloVe, Elmo, BERT
 - Text classification and sentiment analysis
