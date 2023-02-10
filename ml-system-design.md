@@ -193,7 +193,7 @@ I developed the following design flow that worked pretty well during my own inte
 * Food delivery time  
 * Self-driving car (Perception, Prediction, Planning)
  
-## 3. ML System Design Topics <a name="ml-sys-d-t"></a>
+# 3. ML System Design Topics <a name="ml-sys-d-t"></a>
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
 ### Recommendation Systems
