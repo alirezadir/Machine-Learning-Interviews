@@ -1,6 +1,11 @@
 # <a name="ml-sys"></a>  Machine Learning System Design
 
-## Designing ML systems for production
+1. [ML System Design Flow](#ml-sys-d-f)
+2. [ML System Design Sample Questions](#ml-sys-d-q)
+3. [ML System Design Topics](#ml-sys-d-t)
+4. [ML at big tech companies](#ml-sys-d-c)
+
+### Designing ML systems for production
 This is one of my favorite interviews in which you can shine bright and up-level your career. I'd like to mention the following important notes:
 
 - Remember, the goal of ML system design interview is NOT to measure your deep and detailed knowledge of different ML algorithms, but your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
@@ -18,7 +23,7 @@ This is one of my favorite interviews in which you can shine bright and up-level
 
 
 
-# 1. ML System Design Flow
+# 1. ML System Design Flow <a name="ml-sys-d-f"></a>
 Approaching an ML system design problem follows a similar flow to the generic software system design.
 For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
@@ -165,7 +170,7 @@ I developed the following design flow that worked pretty well during my own inte
         - data distribution changes 
   - Continual training 
 
-# ML System Design Sample Questions 
+# 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
 * Recommendation System 
   *  Video recommendation (Netflix, Youtube) 
   *  Friend/follower recommendation (Facebook, Twitter)
@@ -186,9 +191,9 @@ I developed the following design flow that worked pretty well during my own inte
 * Question ansering system
 * Proximity service / Yelp
 * Food delivery time  
-* Self-driving car
+* Self-driving car (Perception, Prediction, Planning)
  
-## ML System Design Topics
+## 3. ML System Design Topics <a name="ml-sys-d-t"></a>
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
 ### Recommendation Systems
@@ -239,13 +244,10 @@ I observed there are certain sets of topics that are frequently brought up or ca
 - Image classification
 - Object Tracking
 - Popular architectures (AlexNet, VGG, ResNET)
-- [TBD]
+- 
 
-### Transfer learning
-- Why and when to use transfer learning
-- How to do it
-  - depending on the dataset sizes and similarities
 
+# 4. ML at big tech companies  <a name="ml-sys-d-c"></a>
 Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
 
 
