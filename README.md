@@ -31,8 +31,8 @@ The following components are the most commonly used interview modules for techni
 | 1 	| [General Coding (Algos and Data Structures)](lc-coding.md)	   | 
 | 2 	| [ML/Data Coding](ml-coding.md) 	|  	
 | 3 	| [ML System Design](ml-system-design.md)|
-| 4 	| [ML Depth](ml-depth.md) 	|  	
-| 5 	| [ML Breadth](ml-breadth.md)| 
+| 4 	| [ML Breadth](ml-breadth.md)| 
+| 5 	| [ML Depth](ml-depth.md) 	|  	
 | 6 	| [Behavioral](behavior.md)| 
 |  	|  	|  
 
