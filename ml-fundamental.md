@@ -110,7 +110,7 @@ Below are the most important topics to cover:
  - Imbalanced data 
  - Data distribution shifts 
 
-### Time complexity of ML algorithms
+### Computational complexity of ML algorithms
 - [TBD]
 
 ## 2. Deep learning
@@ -122,13 +122,13 @@ Below are the most important topics to cover:
   - vanishing/exploding gradient problem
 - LSTM
   - vanishing/exploding gradient problem
-  -  gradient?
+  - gradient?
 - Dropout
   - how to apply dropout to LSTM?
 - Seq2seq models
 - Attention
   - self-attention
-- Transformer  architecture (in details, no kidding!)
+- * Transformer architecture (in details, no kidding!)
   - [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/) 
 - Embeddings (word embeddings)
 
@@ -149,15 +149,23 @@ Below are the most important topics to cover:
 
 # ML Fundamentals Sample Questions 
 - What is machine learning and how does it differ from traditional programming?
+- What are different types of machine learning techniques?
 - What is the difference between supervised and unsupervised learning?
+- What is semi-supervised learning?
+- What are stages of building machine learning models?
 - Can you explain the bias-variance trade-off in machine learning?
 - What is overfitting and how do you prevent it?
+- Why and how do you split data into train, test, and validation set?
 - What is cross-validation and why is it important?
 - Can you explain the concept of regularization and its types (L1, L2, etc.)? 
+- How Do You Handle Missing or Corrupted Data in a Dataset
 - What is a decision tree and how does it work?
+- Can you explain logistic regression?
 - Can you explain the K-Nearest Neighbors (KNN) algorithm?
+- Compare K-means and KNN algorithms.
+- Explain decision-tree based algorithms (random forest, GBDT)
 - What is gradient descent and how does it work?
-- Can you explain the support vector machine (SVM) algorithm?
+- Can you explain the support vector machine (SVM) algorithm? what is Kernel SVM?
 - Can you explain neural networks and how they work?
 - What is deep learning and how does it differ from traditional machine learning?
 - Can you explain the backpropagation algorithm and its role in training neural networks?
