@@ -193,6 +193,8 @@ Design a:
 * Proximity service / Yelp
 * Food delivery time  
 * Self-driving car (Perception, Prediction, Planning)
+* Sentiment analysis system 
+* Healthcare diagnosis system 
 
 More questions can be found [here](https://huyenchip.com/machine-learning-systems-design/exercises.html). 
  
