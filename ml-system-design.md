@@ -19,7 +19,7 @@ This is one of my favorite interviews in which you can shine bright and up-level
   - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
   - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
   - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
-  - Stanford course on ML system design [TBA]
+  - [Stanford course on ML system design](https://online.stanford.edu/courses/cs329s-machine-learning-systems-design)
 
 
 
