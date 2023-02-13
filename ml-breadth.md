@@ -105,8 +105,11 @@ Below are the most important topics to cover:
   - Uniform sampling
   - Reservoir sampling
   - Stratified sampling
-### Missing data
- - [TBD]
+### Handling  data
+ - Missing data 
+ - Imbalanced data 
+ - Data distribution shifts 
+
 ### Time complexity of ML algorithms
 - [TBD]
 
@@ -125,7 +128,8 @@ Below are the most important topics to cover:
 - Seq2seq models
 - Attention
   - self-attention
-- Transformer and its architecture (in details, yes, no kidding! I was asked twice! In an ideal world, I wouldn't answer those detailed questions to anyone except the authors and teammates, as either you've designed it or memorized it!)
+- Transformer  architecture (in details, no kidding!)
+  - [Illustrated transformer](http://jalammar.github.io/illustrated-transformer/) 
 - Embeddings (word embeddings)
 
 
@@ -144,4 +148,19 @@ Below are the most important topics to cover:
     - Euclidean, Manhattan, Cosine, Mahalanobis (advanced)
 
 # ML Fundamentals Sample Questions 
+- What is machine learning and how does it differ from traditional programming?
+- What is the difference between supervised and unsupervised learning?
+- Can you explain the bias-variance trade-off in machine learning?
+- What is overfitting and how do you prevent it?
+- What is cross-validation and why is it important?
+- Can you explain the concept of regularization and its types (L1, L2, etc.)? 
+- What is a decision tree and how does it work?
+- Can you explain the K-Nearest Neighbors (KNN) algorithm?
+- What is gradient descent and how does it work?
+- Can you explain the support vector machine (SVM) algorithm?
+- Can you explain neural networks and how they work?
+- What is deep learning and how does it differ from traditional machine learning?
+- Can you explain the backpropagation algorithm and its role in training neural networks?
+- What is a convolutional neural network (CNN) and how does it work?
+- What is transfer learning and how is it used in practice?
 * [45 ML interview questions](https://www.simplilearn.com/tutorials/machine-learning-tutorial/machine-learning-interview-questions)
