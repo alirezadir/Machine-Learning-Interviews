@@ -3,11 +3,10 @@ As the name suggests, this interview is intended to evaluate your general knowle
 
 The best way to prepare for this interview is to review your notes from ML courses as well some high quality online courses and material. In particular, I found the following resources pretty helpful.
 
-# Courses and review material:
+# 1. Courses and review material:
 - [Andrew Ng's Machine Learning Course](https://www.coursera.org/learn/machine-learning) (you can also find the [lectures on Youtube](https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) )
 - [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
 - [Udacity's deep learning nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101) or  [Coursera's Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) (for deep learning)
-
 
 If you already know the concepts, the following resources are pretty useful for a quick review of different concepts:
 - [StatQuest Machine Learning videos](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
@@ -15,7 +14,7 @@ If you already know the concepts, the following resources are pretty useful for 
 - [Machine Learning cheatsheets](https://ml-cheatsheet.readthedocs.io/en/latest/)
 - [Chris Albon's ML falshcards](https://machinelearningflashcards.com/)
 
-# ML Fundamentals Topics 
+# 2. ML Fundamentals Topics 
 
 Below are the most important topics to cover:
 ## 1. Classic ML Concepts
@@ -147,7 +146,7 @@ Below are the most important topics to cover:
   - Similarity/dissimilarity metrics
     - Euclidean, Manhattan, Cosine, Mahalanobis (advanced)
 
-# ML Fundamentals Sample Questions 
+# 3. ML Fundamentals Sample Questions 
 - What is machine learning and how does it differ from traditional programming?
 - What are different types of machine learning techniques?
 - What is the difference between supervised and unsupervised learning?
