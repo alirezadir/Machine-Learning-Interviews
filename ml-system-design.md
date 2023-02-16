@@ -34,7 +34,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 I developed the following design flow that worked pretty well during my own interviews:
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/5262877/217639552-61a302c1-5193-411e-880e-be3fda7302db.png" title="" width="40%" height="40%">
+<img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
 </p>
 
 
@@ -63,23 +63,9 @@ I developed the following design flow that worked pretty well during my own inte
         - Pros and cons, and decision 
           -  Note: Always start as simple as possible (KISS) and iterate over 
     - Propose a simple model (e.g. a binary logistic regression classifier)
-    
-## 4. Feature Engineering 
-  - Choosing features
-    - Define big actors (e.g. user, item, context), 
-    - Define actor specific features (e.g. user specific features)
-    - Define cross features (e.g. user-item features)
-  - Feature representation
-    - One hot encoding
-    - Embeddings (for text, image, graphs, users, etc)
-    - Encoding categorical features (one hot, ordinal, count, etc) 
-    - Positional embeddings 
-  - Missing Values 
-  - Scaling/Normalization 
-  - Feature importance 
- 
+     
 
-## 5. Data Pipeline 
+## 4. Data Collection and Preperation 
   - Needs 
     - type (e.g. image, text, video, etc) and volume
   - Sources
@@ -110,7 +96,20 @@ I developed the following design flow that worked pretty well during my own inte
       - use only train split for stats, scaling, and missing vals
   - Class imbalance 
   - Data augmentation 
-
+ 
+## 5. Feature Engineering 
+  - Choosing features
+    - Define big actors (e.g. user, item, context), 
+    - Define actor specific features (e.g. user specific features)
+    - Define cross features (e.g. user-item features)
+  - Feature representation
+    - One hot encoding
+    - Embeddings (for text, image, graphs, users, etc)
+    - Encoding categorical features (one hot, ordinal, count, etc) 
+    - Positional embeddings 
+  - Missing Values 
+  - Scaling/Normalization 
+  - Feature importance 
     
 ## 6. Model Development, Training, and Offline Evaluation 
   - Model 1 architecture  
