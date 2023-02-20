@@ -29,9 +29,7 @@ For more insight on general system design interview you can e.g. check out [Grok
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 and [System design primer](https://github.com/donnemartin/system-design-primer).
 
-
-
-I developed the following design flow that worked pretty well during my own interviews:
+I recommend the following ML system design flow that work pretty well both at work and during interviews:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
