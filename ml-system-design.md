@@ -21,13 +21,14 @@ This is one of my favorite interviews in which you can shine bright and up-level
   - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
   - [Stanford course on ML system design](https://online.stanford.edu/courses/cs329s-machine-learning-systems-design)
 
+Approaching an ML system design problem follows a similar logical flow to the generic software system design. (
+For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
+](https://www.educative.io/courses/grokking-the-system-design-interview)
+and [System design primer](https://github.com/donnemartin/system-design-primer).). However, there are certain components in the design of an ML based system that needs to be addressed and need special attention, as you will see below in ML System Design Flow. 
 
 
 # 1. ML System Design Flow <a name="ml-sys-d-f"></a>
-Approaching an ML system design problem follows a similar flow to the generic software system design.
-For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
-](https://www.educative.io/courses/grokking-the-system-design-interview)
-and [System design primer](https://github.com/donnemartin/system-design-primer).
+
 
 I recommend the following ML system design flow that work pretty well both at work and during interviews:
 
