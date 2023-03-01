@@ -6,9 +6,9 @@
 4. [ML at big tech companies](#ml-sys-d-c)
 
 ### Designing ML systems for production
-This is one of my favorite interviews in which you can shine bright and up-level your career. I'd like to mention the following important notes:
-
-- Remember, the goal of ML system design interview is NOT to measure your deep and detailed knowledge of different ML algorithms, but your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
+Notes:
+- In an ML system design interview you are exposed to open ended questions with no single correct answer. 
+- The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure. 
 
 - Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 <p align="center">
@@ -28,27 +28,32 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 
 
 # 1. ML System Design Flow <a name="ml-sys-d-f"></a>
-
-
-I recommend the following ML system design flow that work pretty well both at work and during interviews:
+In order to design a solid ML system for real world applications, it is important to follow a design flow. 
+I recommend using the following **ML System Design Flow** to design ML system solutions for ML-relevant business problems both at work and during interviews:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
 </p>
 
+Note: Remember when using this design flow during an interview to be flexible. According to the needs of the interview or the interests of the interviewer, you may skip some of these components or spend more time deeping dive in one or two components.  
 
 ## 1. Problem Formulation 
-  - Use case(s) and business goal
-  - What does it mean? 
-    - Translate an abstract problem into an ML problem (identify it e.g. as binary classification, multi-classification, unsupervised learning, etc)
+  - Clarifying questions 
+   - Use case(s) and business goal
    - Requirements
-      - Scope, scale, and personalization   
-      - prediction: latency, scale of prediction 
-   - Assumptions 
-   - Do we need ML to solve this problem? 
+      - Scope (features needed), scale, and personalization   
+      - Performance: prediction latency, scale of prediction 
+      - Constraints
+      - Data: sources and availability  
+  - Assumptions 
+  - What does it mean? 
+    - Translate an abstract problem into an ML problem 
+      -  ML objective, ML I/O, and ML category (e.g.  binary classification, multi-classification, unsupervised learning, etc)
+  - Do we need ML to solve this problem? 
       - Trade off between impact and cost
         - Costs: Data collection, data annotation, compute 
         - if Yes, we choose an ML system to design. If No, follow a general system design flow.  
+        - Note: in an ML system design interview we can assume we need ML. 
 
 ## 2. Metrics (Offline and Online)
   - Offline metrics (e.g. classification, relevance metrics)  
@@ -153,6 +158,12 @@ I recommend the following ML system design flow that work pretty well both at wo
     - Model 1 architecture  (e.g. candidate generation)
     - Model 2 architecture (e.g. ranker, filter)
     - ... 
+ - Popular architectures
+  - tow-tower 
+  - wide and deep 
+  - multi-task learning 
+  - ... 
+ - Cost fcn and optimizer
  - Data splits (train, dev, test)
     - Portions
     - Splitting time-correlated data (split by time)
@@ -169,6 +180,7 @@ I recommend the following ML system design flow that work pretty well both at wo
     - Model Selection 
     - Data augmentation 
     - Model update frequency 
+- Model calibration 
    
 
 ## 7. Inference/Prediction Service 
@@ -309,9 +321,10 @@ I observed there are certain sets of topics that are frequently brought up or ca
     - Acoustic modeling
       - HMMs for AM
       - CTC algorithm (advanced)
-    - Language modeling
+   - Language modeling
       - N-grams vs deep learning models (trade-offs)
       - Out of vocabulary problem
+      - Decoding 
   - Dialog and chatbots
     - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
     - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
