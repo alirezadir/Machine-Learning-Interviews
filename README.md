@@ -8,7 +8,7 @@
 
 # A Guide for Machine Learning Technical Interviews (FAANG Companies):robot: 
 <p align="center">
-<img width="640" src="imgs/cover.png">
+<img width="720" src="src/imgs/cover.png">
 </p>
 
 
