@@ -108,7 +108,22 @@ argmax over the start and end logits -> slice the span from the inputs to decode
 - Note: we need to take care of Q's where there's no answer for (empty list) -> in the decoding make sure to convert them to empty strings 
 - Note: We can have our model predict multiple answers by returning top-k 
 - Dealing with long languages: context in QA often is longer than max seq. length in transformers (e.g. 512 tokens in MiniLM). This is ok with classification tasks but for QA is problematic as the answer might be close to the end of the context. Solution: Use a sliding window of max_len and stride. 
+- Trade-off between underestimating (EM) and overestimating (F1) in the reader 
 
- 
-## Extensions 
- Domain Adaptation 
+- Domain Adaptation: Fine tune on SubjQA  
+
+
+
+### Extensions 
+
+- Generative QA  
+    - Example: Retrieval Augmented Generation (RAG) [[Paper](https://arxiv.org/pdf/2005.11401.pdf)]
+
+- Generalization to open-domain 
+
+## Scaling 
+- Making transformers faster in production 
+    - Knowledge Distillation: Making models smaller 
+        - KD during fine tuning 
+    - Quantization: Making models faster 
+    - Weight pruning: Making models sparser  

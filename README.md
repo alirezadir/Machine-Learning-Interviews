@@ -6,14 +6,26 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/LICENSE) -->
 
-# A Guide for Machine Learning Technical Interviews (FAANG Companies):robot: 
+# A guide for Machine Learning Technical Interviews :robot: 
 <p align="center">
 <img width="720" src="src/imgs/cover.png">
 </p>
 
 
-This repo aims to serve as a guide to prepare for **Machine Learning (AI) engineer** interviews for roles at big tech companies (in particular FAANG). It has compiled based on authors personal experience and notes from his own interview preparation in 2020, when he received offers from Facebook (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku.
+This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineer** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
 
+The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
+
+
+
+ | | |
+ |---| --- |
+| Chapter 1 	| [General Coding (Algos and Data Structures)](src/lc-coding.md)	   | 
+| Chapter 2 	| [ML/Data Coding](src/ml-coding.md) 	|  	
+| Chapter 3 	| [ML System Design (Updated in 2023)](src/ml-system-design.md)|
+| Chapter 4 	| [ML Fundamentals/Breadth](src/ml-fundamental.md)| 
+| Chapter 5 	| [Behavioral](src/behavior.md)| 
+|  	|  	|  
 
 Notes:
 
@@ -23,18 +35,6 @@ Notes:
 
 * As a supplementary resource, you can also refer to my [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) repo for further insights on how to design deep learning systems for production. 
 
-The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
-
-
- | | |
- |---| --- |
-| Chpater 1 	| [General Coding (Algos and Data Structures)](src/lc-coding.md)	   | 
-| Chpater 2 	| [ML/Data Coding](src/ml-coding.md) 	|  	
-| Chpater 3 	| [ML System Design](src/ml-system-design.md)|
-| Chpater 4 	| [ML Fundamentals/Breadth](src/ml-fundamental.md.md)| 
-| Chpater 5 	| [ML Depth](src/ml-depth.md) 	|  	
-| Chpater 6 	| [Behavioral](src/behavior.md)| 
-|  	|  	|  
 
 
 # Contribution

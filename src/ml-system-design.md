@@ -1,9 +1,9 @@
 # <a name="ml-sys"></a>  Machine Learning System Design
 
-1. [ML System Design Flow](#ml-sys-d-f)
-2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions)
-3. [ML System Design Topics](#ml-sys-d-t)
-4. [ML at big tech companies](#ml-sys-d-c)
+## 1. [ML System Design Flow](#ml-sys-d-f)
+## 2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions)
+## 3. [ML System Design Topics](#ml-sys-d-t)
+## 4. [ML at Big Tech companies](#ml-sys-d-c)
 
 ### Designing ML systems for production
 
