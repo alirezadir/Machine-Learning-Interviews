@@ -8,7 +8,7 @@
 
 # A Guide for Machine Learning Technical Interviews (FAANG Companies):robot: 
 <p align="center">
-<img width="640" src="images/cover.png">
+<img width="640" src="imgs/cover.png">
 </p>
 
 
@@ -26,16 +26,15 @@ Notes:
 The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
 
 
+ | | |
+ |---| --- |
+| Chpater 1 	| [General Coding (Algos and Data Structures)](src/lc-coding.md)	   | 
+| Chpater 2 	| [ML/Data Coding](src/ml-coding.md) 	|  	
+| Chpater 3 	| [ML System Design](src/ml-system-design.md)|
+| Chpater 4 	| [ML Fundamentals/Breadth](src/ml-fundamental.md.md)| 
+| Chpater 5 	| [ML Depth](src/ml-depth.md) 	|  	
+| Chpater 6 	| [Behavioral](src/behavior.md)| 
 |  	|  	|  
-|---	|---	|
-| Chpater 1 	| [General Coding (Algos and Data Structures)](lc-coding.md)	   | 
-| Chpater 2 	| [ML/Data Coding](ml-coding.md) 	|  	
-| Chpater 3 	| [ML System Design](ml-system-design.md)|
-| Chpater 4 	| [ML Fundamentals/Breadth](ml-fundamental.md.md)| 
-| Chpater 5 	| [ML Depth](ml-depth.md) 	|  	
-| Chpater 6 	| [Behavioral](behavior.md)| 
-|  	|  	|  
-
 
 
 # Contribution

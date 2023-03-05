@@ -1,7 +1,7 @@
 # <a name="ml-sys"></a>  Machine Learning System Design
 
 1. [ML System Design Flow](#ml-sys-d-f)
-2. [ML System Design Sample Questions](#ml-sys-d-q)
+2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions)
 3. [ML System Design Topics](#ml-sys-d-t)
 4. [ML at big tech companies](#ml-sys-d-c)
 
@@ -18,11 +18,6 @@ Notes:
 <img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="60%" height="60%">
 </p>
 
-- For more insight on different components above you can check out the following resources):
-  - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
-  - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
-  - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
-  - [Stanford course on ML system design](https://online.stanford.edu/courses/cs329s-machine-learning-systems-design)
 
 Approaching an ML system design problem follows a similar logical flow to the generic software system design. (
 For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
@@ -32,11 +27,29 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 # 1. ML System Design Flow <a name="ml-sys-d-f"></a>
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
-I recommend using the following **ML System Design Flow** to design ML system solutions for ML-relevant business problems both at work and during interviews:
+I recommend using the following **9-step ML System Design Flow** to design SW system solutions for ML-relevant business problems both at work and during interviews:
 
-<p align="center">
+<!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
-</p>
+</p> -->
+
+
+**The 9-step ML System Design Flow:**
+<center>
+
+|   |    |  
+|- |-------- | 
+|Step 1| [Problem Formulation](#1-problem-formulation) |
+|Step 2 |[Metrics (Offline and Online)](#2-metrics-offline-and-online) |
+|Step 3 |[Architectural Components (MVP Logic)](#3-architectural-components-mvp-logic)|
+|Step 4 |[Data Collection and Preparation](#4-data-collection-and-preparation) |
+|Step 5 |[Feature Engineering](#5-feature-engineering) |
+|Step 6 |[Model Development and Offline Evaluation](#6-model-development-and-offline-evaluation) |
+|Step 7 |[Prediction Service](#7-prediction-service) |
+|Step 8 |[Online Testing and Deployment](#8-online-testing-and-model-deployment)  |
+|Step 9 |[Scaling, Monitoring, and Updates](#9-scaling-monitoring-and-updates) |
+| | |
+</center>
 
 Note: Remember when using this design flow during an interview to be flexible. According to the needs of the interview or the interests of the interviewer, you may skip some of these components or spend more time for a deep dive in one or two components.  
 
@@ -64,15 +77,15 @@ Note: Remember when using this design flow during an interview to be flexible. A
 ## 2. Metrics (Offline and Online)
 
 - Offline metrics (e.g. classification, relevance metrics)  
-  - Accuracy related metrics
+  - Classification metrics
     - Precision, Recall, F1, AUC ROC, mAP, log-loss, etc
       - Imbalanced data
-  - Retrieval metrics
-    - Precision@k, MAP, MRR
-  - Ranking metrics
-    - NDCG
+  - Retrieval and ranking metrics
+    - Precision@k, Recall@k, MAP, MRR, NDCG
+  - Regression metrics: MSE, MAE, 
   - Problem specific metrics
-    - e.g. BLEURT, GLUE for language, CPE for ads, etc  
+    - Language: BLEU, BLEURT, GLUE, ROUGE, etc 
+    - ads: CPE, etc  
   - Latency
   - Computational cost (in particular for on-device)
 - Online metrics
@@ -101,7 +114,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Tow-tower
     - Wide and deep learning
     - multi-task learning
-  ...
+   - ...
 
 
 ## 4. Data Collection and Preparation  
@@ -189,7 +202,9 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - use only train split for stats, scaling, and missing vals
 - Model training 
   - Loss functions 
+    - MSE, Binary/Categorical CE, MAE, Huber loss, Hinge loss, contrastive loss, etc
   - Optimizers
+    - SGD, AdaGrad, RMSProp, Adam, etc
   - Model validation  
   - Debugging <!-- - More on Debugging (TODO) -->
   - Offline vs online training  
@@ -201,17 +216,17 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Model update frequency
 - Model calibration
 
-## 7. Inference/Prediction Service
+## 7. Prediction Service
 
 - Data processing and verification
 - Web app and serving system
-- Prediction serivce
+- Prediction service
 - Batch vs Online prediction
-- Batch: periodic, pre-computed and stored, retrieved as needed - high throughput
+  - Batch: periodic, pre-computed and stored, retrieved as needed - high throughput
   - Online: predict as request arrives - low latency
   - Hybrid: e.g. Netflix: batch for titles, online for rows
 - ML on the Edge (on-device AI)
-  - Network connection/latancy, privacy, cheap
+  - Network connection/latency, privacy, cheap
   - Memory, compute power, energy constraints  
   - Model Compression
     - Quantization
@@ -259,7 +274,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - edge cases  
     - data distribution changes
 - Alarms
-  - failures (data pipeline, training, depolyment), low metrics, etc
+  - failures (data pipeline, training, deployment), low metrics, etc
 - Continual training
   - Model updates
     - train from scratch or a base model
@@ -283,10 +298,10 @@ Design a:
   - Rental recommendation (Airbnb)
   - Place recommendation
 - Newsfeed system (ranking)
-- Search system (retrival, ranking)
-  - Google saerch
-- Ads serving system (retrival, ranking)
-- Ads click predicition system (ranking)
+- Search system (retrieval, ranking)
+  - Google search
+- Ads serving system (retrieval, ranking)
+- Ads click prediction system (ranking)
 - Named entity linking system (tagging, resolution)
 - Spam/illegal ads/email detection system
 - Fraud detection system
@@ -294,14 +309,13 @@ Design a:
 - Ride matching system
 - Language identification system
 - Chatbot system
-- Question ansering system
+- [Question answering system]()
 - Proximity service / Yelp
 - Food delivery time  
 - Self-driving car (Perception, Prediction, Planning)
 - Sentiment analysis system
 - Healthcare diagnosis system
 
-More questions can be found [here](https://huyenchip.com/machine-learning-systems-design/exercises.html).
 
 # 3. ML System Design Topics <a name="ml-sys-d-t"></a>
 
@@ -368,3 +382,11 @@ I observed there are certain sets of topics that are frequently brought up or ca
 # 4. ML at big tech companies  <a name="ml-sys-d-c"></a>
 
 Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
+
+# More resources 
+
+- For more insight on different components above you can check out the following resources):
+  - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
+  - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
+  - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
+  - [Stanford course on ML system design](https://online.stanford.edu/courses/cs329s-machine-learning-systems-design)
