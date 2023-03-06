@@ -290,31 +290,31 @@ Note: Remember when using this design flow during an interview to be flexible. A
 
 # 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
 
-Design a:
-- Recommendation System
+### Design a:
+* ### Recommendation System
   - Video recommendation (Netflix, Youtube)
   - Friend/follower recommendation (Facebook, Twitter)
   - Replacement product recommendation (Instacart)
   - Rental recommendation (Airbnb)
   - Place recommendation
-- Newsfeed system (ranking)
-- Search system (retrieval, ranking)
+- ### Newsfeed system (ranking)
+- ### Search system (retrieval, ranking)
   - Google search
-- Ads serving system (retrieval, ranking)
-- Ads click prediction system (ranking)
-- Named entity linking system (tagging, resolution)
-- Spam/illegal ads/email detection system
-- Fraud detection system
-- Autocompletion / Typeahead suggestion system
-- Ride matching system
-- Language identification system
-- Chatbot system
-- [Question answering system]()
-- Proximity service / Yelp
-- Food delivery time  
-- Self-driving car (Perception, Prediction, Planning)
-- Sentiment analysis system
-- Healthcare diagnosis system
+- ### Ads serving system (retrieval, ranking)
+<!-- - Ads click prediction system (ranking) -->
+- ### Named entity linking system (tagging, resolution)
+- ### Harmful/spam/illegal content detection system (ads/email)
+- ### Fraud detection system
+- ### Autocompletion / Typeahead suggestion system
+- ### Ride matching system
+- ### Language identification system
+- ### Chatbot system
+- ### [Question answering system]()
+- ### Proximity service / Yelp
+- ### Food delivery time  
+- ### Self-driving car (Perception, Prediction, Planning)
+- ### Sentiment analysis system
+- ### Healthcare diagnosis system
 
 
 # 3. ML System Design Topics <a name="ml-sys-d-t"></a>
