@@ -5,17 +5,13 @@
 ## 3. [ML System Design Topics](#ml-sys-d-t)
 ## 4. [ML at Big Tech companies](#ml-sys-d-c)
 
+
 ### Designing ML systems for production
 
-Notes:
-
-- In an ML system design interview you are exposed to open ended questions with no single correct answer.
-- The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
-
-- Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
+Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 
 <p align="center">
-<img src="https://github.com/alirezadir/Production-Level-Deep-Learning/blob/master/images/components.png" title="" width="60%" height="60%">
+<img src="../imgs/components.png" title="" width="90%" height="80%">
 </p>
 
 
@@ -23,6 +19,12 @@ Approaching an ML system design problem follows a similar logical flow to the ge
 For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 and [System design primer](https://github.com/donnemartin/system-design-primer).). However, there are certain components in the design of an ML based system that needs to be addressed and need special attention, as you will see below in ML System Design Flow.
+
+### ML System Design Interview 
+
+- In an ML system design interview you are exposed to open ended questions with no single correct answer.
+- The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
+
 
 # 1. ML System Design Flow <a name="ml-sys-d-f"></a>
 
@@ -33,8 +35,11 @@ I recommend using the following **9-step ML System Design Flow** to design SW sy
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
 </p> -->
 
+<center>
 
 **The 9-step ML System Design Flow:**
+</center>
+
 <center>
 
 |   |    |  
@@ -110,11 +115,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Model 1 architecture  (e.g. candidate generation)
     - Model 2 architecture (e.g. ranker, filter)
     - ...
-- Popular architectures
-    - Tow-tower
-    - Wide and deep learning
-    - multi-task learning
-   - ...
+
 
 
 ## 4. Data Collection and Preparation  
@@ -181,6 +182,10 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - pre-compute and store
   - Encoding categorical features (one hot, ordinal, count, etc)
   - Positional embeddings
+- Preprocessing features 
+  - Needed for unstructured data 
+    - Text: Tokenize (Normalize, pre-tokenize, tokenizer model (ch/word/subword level), post-process (add special tokens))
+    - Images: Resize, normalize
 - Missing Values
 - Scaling/Normalization
 - Feature importance
@@ -193,6 +198,37 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Pros and cons, and decision
       - Note: Always start as simple as possible (KISS) and iterate over
     <!-- - More on Model Selection (TODO) -->
+
+  - Typical modeling choices: 
+    - Logistic Regression 
+    - Linear regression 
+    - Decision trees
+    - GBDT and RF 
+    - SVM
+    - Neural networks 
+      - FF 
+      - CNN
+      - RNN 
+      - Transformers
+  
+  - Popular NN architectures:
+    - Two stage funnel architecture (candidate generation + ranking )
+    - Tow-tower architecture
+    - Wide and deep learning
+    - Deep cross network
+    - Multi-task learning
+    - Transformers
+      - Encoder, Decoder, Encoder-decoder
+    - Knowledge distillation (student-teacher network)
+    - NLP
+      - BERT, T5, GPT
+    - Computer Vision
+         -Object detectors (single stage, two-stage)
+      - Vision Transformer
+
+
+
+
 - Data splits (train, dev, test)
   - Portions
   - Splitting time-correlated data (split by time)
@@ -251,6 +287,9 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Scaling general SW system (distributed servers, load balancer, sharding, replication, caching, etc)
     - Train data / KB partitioning
   - Scaling ML system
+    - [Distributed training]()
+      - Data parallel DT
+      - RPC based DT   
     - Data parallelism (for training)
     - Model parallelism (for inference)
     - Monitoring, failure tolerance, updating
@@ -273,20 +312,24 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - feedback loops
     - edge cases  
     - data distribution changes
-- Alarms
-  - failures (data pipeline, training, deployment), low metrics, etc
-- Continual training
+  - Alarms
+    - failures (data pipeline, training, deployment), low metrics, etc
+- Updates: Continual training
   - Model updates
     - train from scratch or a base model
     - how often? daily, weekly, monthly, etc
-  - Auto update models  
+  - Auto update models 
+  - Active learning 
+  - Human in the loop ML  
 
-## 10. Deep dive, and iterate
+## 10. Beyond MVP
 
 - Edge cases (e.g. invalid/junk input)
 - Iterations over the base design
 - Bias in training data
 - Freshness, Diversity
+
+
 
 # 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
 
@@ -323,61 +366,85 @@ I observed there are certain sets of topics that are frequently brought up or ca
 
 ### Recommendation Systems
 
-- Recommend the most relevant items to users
-- Collaborative Filtering (CF)
-  - User based, item based
-  - Cold start problem
-  - Matrix factorization
-- Content based filtering
+- Candidate generation 
+  - Collaborative Filtering (CF)
+    - User based, item based
+    - Matrix factorization
+    - Two-tower approach
+  - Content based filtering
+- Ranking 
+- Learning to rank (LTR)
+  - point-wise (simplest), pairwise, list-wise 
 
-### Ranking (Ads, newsfeed, etc)
+### Search and Ranking (Ads, newsfeed, etc)
 
-- Ranking by relevance
-- Ranking algorithms
-- Multi-stage ranking + blender + filter
+- Search systems 
+  - Query search 
+  - Visual search 
+  - Video search 
+  - Two stage model 
+    - document selection
+    - document ranking 
+- Ranking 
+  - Newsfeed ranking system
+  - Ads ranking system 
+  <!-- - Ranking by relevance -->
+  - Ranking as classification 
+  - Multi-stage ranking + blender + filter
+  <!-- - Information Retrieval -->
 
-### Information Retrieval
-
-- Candidate generation
-- Search
-  - Document selection
-
-### Personalization
 
 ### NLP
 
-- Preprocessing
-- Word Embeddings
-  - Word2Vec, GloVe, Elmo, BERT, GPT
-- Text classification and sentiment analysis
-- NLP specialist topics:
-  - Language Modeling
-  - Part of speech tagging
-    - POS HMM
-    - Viterbi algorithm and beam search
-  - Named entity recognition
-  - Topic modeling
-  - Speech Recognition Systems
+- Feature engineering 
+  - Preprocessing (tokenization)
+- Text Embeddings
+  - Word2Vec, GloVe, Elmo, BERT
+- NLP Tasks:
+  - Text classification
+    - Sentiment analysis
+    - Topic modeling
+  - Sequence tagging  
+    - Named entity recognition
+    - Part of speech tagging
+      - POS HMM
+      - Viterbi algorithm, beam search
+  - Text generation 
+    - Language modeling
+      - N-grams vs deep learning models (trade-offs)
+      <!-- - Out of vocabulary problem -->
+      - Decoding
+
+  - Sequence 2 Sequence models
+    - Machine Translation
+      - Seq2seq models, NMT, Transformers
+  - Question Answering 
+  - [Adv] Dialog and chatbots
+      - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
+      - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
+  
+- Speech Recognition Systems
     - Feature extraction, MFCCs
     - Acoustic modeling
       - HMMs for AM
       - CTC algorithm (advanced)
-  - Language modeling
-    - N-grams vs deep learning models (trade-offs)
-    - Out of vocabulary problem
-    - Decoding
-  - Dialog and chatbots
-    - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
-    - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
-  - Machine Translation
-    - Seq2seq models, NMT, Transformers
 
-### Computer vision
+### Computer Vision
 
 - Image classification
+  - VGG, ResNET
+- [Object detection](https://viso.ai/deep-learning/object-detection/) 
+  - Two stage models (R-CNN, Fast R-CNN, Faster R-CNN)
+  - One stage models  (YOLO, SSD)
+  - [Vision Transformer (ViT)](https://viso.ai/deep-learning/vision-transformer-vit/)
+  - NMS algorithm 
 - Object Tracking
-- Popular architectures (AlexNet, VGG, ResNET)
-- ...
+<!-- - Popular architectures (AlexNet, VGG, ResNET, R-CNN, YOLO) -->
+ 
+### Graph problems
+- People you may know 
+<!-- ### Personalization -->
+
 
 # 4. ML at big tech companies  <a name="ml-sys-d-c"></a>
 

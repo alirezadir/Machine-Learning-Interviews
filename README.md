@@ -22,7 +22,7 @@ The following components are the most commonly used interview modules for techni
  |---| --- |
 | Chapter 1 	| [General Coding (Algos and Data Structures)](src/lc-coding.md)	   | 
 | Chapter 2 	| [ML/Data Coding](src/ml-coding.md) 	|  	
-| Chapter 3 	| [ML System Design (Updated in 2023)](src/ml-system-design.md)|
+| Chapter 3 	| [ML System Design (Updated in 2023)](src/MLSD/ml-system-design.md)|
 | Chapter 4 	| [ML Fundamentals/Breadth](src/ml-fundamental.md)| 
 | Chapter 5 	| [Behavioral](src/behavior.md)| 
 |  	|  	|  
