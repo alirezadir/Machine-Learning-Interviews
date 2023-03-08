@@ -86,7 +86,8 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Precision, Recall, F1, AUC ROC, mAP, log-loss, etc
       - Imbalanced data
   - Retrieval and ranking metrics
-    - Precision@k, Recall@k, MAP, MRR, NDCG
+    - Precision@k, Recall@k (do not consider ranking quality)
+    - mAP, MRR, nDCG
   - Regression metrics: MSE, MAE, 
   - Problem specific metrics
     - Language: BLEU, BLEURT, GLUE, ROUGE, etc 
@@ -95,10 +96,12 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Computational cost (in particular for on-device)
 - Online metrics
   - CTR
-  - Task/session success/failure rate/times,
-  - Engagement rate
-  - Reciprocal rank of first click etc,
+  - Task/session success/failure rate,
+  - Task/session total (e.g. watch) times, 
+  - Engagement rate (like rate, comment rate)
   - Conversion rate
+  - Revenue lift 
+  - Reciprocal rank of first click, etc,
   - Counter metrics: direct negative feedback (hide, report)
 - Trade-offs b/w metrics
 
@@ -129,12 +132,10 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - implicit (logging), explicit (e.g. user survey)
 - Data storage
 - ML Data types
-  - structured (numerical, categorical),
-  - unstructured(e.g. image, text)
-- Sampling
-  - Non-probabilistic sampling
-  - Probabilistic sampling methods
-    - random, stratified, reservoir, importance sampling
+  - structured 
+    - numerical
+    - categorical (ordinal, nominal),
+  - unstructured(e.g. image, text, video, audio)
 - Labelling (for supervised)
   - Labeling methods
     - Natural labels (extracted from data e.g. clicks, likes, purchase, etc)
@@ -151,13 +152,9 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - zero-shot or fine-tune for downstream task  
   - Active learning
   - Labeling cost and trade-offs
-- Class imbalance
-  - Resampling
-  - weighted loss fcn
-  - combining classes  
 - Data augmentation
-- Data generation
-  - Data ingestion (offline, online)
+- Data Generation Pipeline 
+  - Data collection/ingestion (offline, online)
   - Feature generation (next)
   - Feature transform
   - Label generation
@@ -168,8 +165,8 @@ Note: Remember when using this design flow during an interview to be flexible. A
 - Choosing features
   - Define big actors (e.g. user, item, document, query, ad, context),
   - Define actor specific features (current, historic)
-    - Example text features: n-grams (uni,bi), intent, topic, frequency, length, embeddings  
-    - Example user features: user profile, user history, user interests  
+    - Example user features: user profile, user history, user interests 
+    - Example text features: n-grams (uni,bi), intent, topic, frequency, length, embeddings   
   - Define cross features (e.g. user-item, or query-document features)
     - Example query-document features: tf-idf
     - Example user-item features: user-video watch history, user search history, user-ad interactions(view, like)
@@ -182,35 +179,43 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - pre-compute and store
   - Encoding categorical features (one hot, ordinal, count, etc)
   - Positional embeddings
+  - Scaling/Normalization (for numerical features)
 - Preprocessing features 
   - Needed for unstructured data 
     - Text: Tokenize (Normalize, pre-tokenize, tokenizer model (ch/word/subword level), post-process (add special tokens))
     - Images: Resize, normalize
+    - Video: Decode frames, sample, resize, scale and normalize
 - Missing Values
-- Scaling/Normalization
 - Feature importance
 - Featurizer (raw data -> features)
-
+- Static (from feature store) vs dynamic (computed online) features 
+  
 ## 6. Model Development and Offline Evaluation
 
-- Model selection (baseline)
+- Model selection (MVP)
   - Heuristics -> simple model -> more complex model -> ensemble of models
     - Pros and cons, and decision
-      - Note: Always start as simple as possible (KISS) and iterate over
+    - Note: Always start as simple as possible (KISS) and iterate over
     <!-- - More on Model Selection (TODO) -->
 
   - Typical modeling choices: 
     - Logistic Regression 
     - Linear regression 
-    - Decision trees
-    - GBDT and RF 
+    - Decision tree variants
+      - GBDT (XGBoost) and RF 
     - SVM
     - Neural networks 
-      - FF 
+      - FeedForward 
       - CNN
       - RNN 
       - Transformers
-  
+  - Decision Factors 
+    - Complexity of the task 
+    - Data: Type of data (structured, unstructured), amount of data, complexity of data 
+    - Training speed 
+    - Inference requirements: compute, latency, memory 
+    - Continual learning  
+    - Interpretability 
   - Popular NN architectures:
     - Two stage funnel architecture (candidate generation + ranking )
     - Tow-tower architecture
@@ -226,21 +231,31 @@ Note: Remember when using this design flow during an interview to be flexible. A
          -Object detectors (single stage, two-stage)
       - Vision Transformer
 
+- Dataset 
+  - Sampling
+    - Non-probabilistic sampling
+    - Probabilistic sampling methods
+      - random, stratified, reservoir, importance sampling
+  - Data splits (train, dev, test)
+    - Portions
+    - Splitting time-correlated data (split by time)
+      - seasonality, trend  
+    - Data leakage:
+      - scale after split,
+      - use only train split for stats, scaling, and missing vals
 
+  - Class Imbalance 
+    - Resampling
+    - weighted loss fcn
+    - combining classes  
 
-
-- Data splits (train, dev, test)
-  - Portions
-  - Splitting time-correlated data (split by time)
-    - seasonality, trend  
-  - Data leakage:
-    - scale after split,
-    - use only train split for stats, scaling, and missing vals
 - Model training 
   - Loss functions 
-    - MSE, Binary/Categorical CE, MAE, Huber loss, Hinge loss, contrastive loss, etc
+    - MSE, Binary/Categorical CE, MAE, Huber loss, Hinge loss, Contrastive loss, etc
   - Optimizers
     - SGD, AdaGrad, RMSProp, Adam, etc
+  - Model training 
+    - Training from scratch or fine-tune  
   - Model validation  
   - Debugging <!-- - More on Debugging (TODO) -->
   - Offline vs online training  
@@ -261,6 +276,9 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Batch: periodic, pre-computed and stored, retrieved as needed - high throughput
   - Online: predict as request arrives - low latency
   - Hybrid: e.g. Netflix: batch for titles, online for rows
+- Nearest Neighbor Service
+  - Approximate NN 
+    - Tree based, LSH, Clustering based 
 - ML on the Edge (on-device AI)
   - Network connection/latency, privacy, cheap
   - Memory, compute power, energy constraints  
@@ -310,7 +328,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - ML system failure
     - data distribution difference (test vs online)
     - feedback loops
-    - edge cases  
+    - edge cases (e.g. invalid/junk input)
     - data distribution changes
   - Alarms
     - failures (data pipeline, training, deployment), low metrics, etc
@@ -324,10 +342,11 @@ Note: Remember when using this design flow during an interview to be flexible. A
 
 ## 10. Beyond MVP
 
-- Edge cases (e.g. invalid/junk input)
-- Iterations over the base design
+- Extensions: 
+  - Iterations over the base design to add a new functional feature 
 - Bias in training data
 - Freshness, Diversity
+- Privacy and security 
 
 
 
@@ -337,27 +356,30 @@ Note: Remember when using this design flow during an interview to be flexible. A
 * ### Recommendation System
   - Video recommendation (Netflix, Youtube)
   - Friend/follower recommendation (Facebook, Twitter)
+    - People you may know (LinkedIn)
   - Replacement product recommendation (Instacart)
   - Rental recommendation (Airbnb)
   - Place recommendation
 - ### Newsfeed system (ranking)
 - ### Search system (retrieval, ranking)
-  - Google search
+  - Semantic Search system (retrieval, ranking)
+  - Document search, Image search, Video search
+  - Query: Text, Image, Video
 - ### Ads serving system (retrieval, ranking)
 <!-- - Ads click prediction system (ranking) -->
 - ### Named entity linking system (tagging, resolution)
-- ### Harmful/spam/illegal content detection system (ads/email)
-- ### Fraud detection system
+- ### Harmful/spam content detection system 
 - ### Autocompletion / Typeahead suggestion system
 - ### Ride matching system
 - ### Language identification system
 - ### Chatbot system
 - ### [Question answering system]()
 - ### Proximity service / Yelp
-- ### Food delivery time  
+- ### Food delivery time  approximation
 - ### Self-driving car (Perception, Prediction, Planning)
 - ### Sentiment analysis system
 - ### Healthcare diagnosis system
+- ### Fraud detection system
 
 
 # 3. ML System Design Topics <a name="ml-sys-d-t"></a>
@@ -379,7 +401,7 @@ I observed there are certain sets of topics that are frequently brought up or ca
 ### Search and Ranking (Ads, newsfeed, etc)
 
 - Search systems 
-  - Query search 
+  - Query search (keyword search, [semantic search](https://txt.cohere.ai/what-is-semantic-search/?utm_source=linkedin&utm_medium=paidsocial&utm_campaign=contentpromotion_bloglookalikes)) 
   - Visual search 
   - Video search 
   - Two stage model 
