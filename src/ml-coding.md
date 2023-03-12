@@ -2,24 +2,39 @@
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 
 ## ML Algorithms 
-- k-means clustering
-- k-nearest neighbors
-- Decision trees
-- Perceptron, MLP
-- Linear regression
-- Logistic regression
-- SVM
+- K-means clustering ([code](https://colab.research.google.com/drive/1jbBmsNZ1hBUXm-Y2JEeOFhLdYC_UwOYF?usp=sharing))
+
+- K-nearest neighbors ([code](https://github.com/MahanFathi/CS231/blob/master/assignment1/cs231n/classifiers/k_nearest_neighbor.py))
+  
+- Decision trees ([code](https://github.com/random-forests/tutorials/blob/master/decision_tree.py))
+
+- Perceptron and FeedForward NN ([code 1](https://github.com/alirezadir/deep-learning/blob/master/first-neural-network/my_answers.py), [code 2](https://github.com/MahanFathi/CS231/blob/master/assignment1/cs231n/classifiers/neural_net.py))
+
+- Linear regression ([code](./Notebooks/linear_regression_md.ipynb))
+
+- Logistic regression ([code](./Notebooks/logistic_regression_md.ipynb))
+
+- Linear SVM ([link](https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47))
+- Softmax 
+- RNN 
+- CNN 
 
 ##  Sampling
-  - stratified sampling
+  - stratified sampling ([link](https://towardsdatascience.com/the-5-sampling-algorithms-every-data-scientist-need-to-know-43c7bc11d17c))
   - uniform sampling
   - reservoir sampling
   - sampling multinomial distribution
   - random generator
-
+  
 ## NLP algorithms 
   - bigrams
   - tf-idf
 
+## Other 
+  - Random int in range ([link1](https://leetcode.com/discuss/interview-question/125347/generate-uniform-random-integer
+), [link2](https://leetcode.com/articles/implement-rand10-using-rand7/))
+  - Triangle closing 
+  - Meeting point  
+
 ## Sample codes
-- You can find some sample codes (or links to ones) in the [ML_Coding_Problems Notebook](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/Notebooks/ML_Coding_Problems.ipynb).
+- You can find some sample codes under the [Notebooks](https://github.com/alirezadir/machine-learning-interviews/tree/main/src/Notebooks).
