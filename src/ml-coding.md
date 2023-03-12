@@ -1,5 +1,7 @@
 # <a name="ml-coding"></a> 2. ML/Data Coding :robot:
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
+
+## ML Algorithms 
 - k-means clustering
 - k-nearest neighbors
 - Decision trees
@@ -7,13 +9,15 @@ ML coding module may or may not exist in particular companies interviews. The go
 - Linear regression
 - Logistic regression
 - SVM
-- Sampling
+
+##  Sampling
   - stratified sampling
   - uniform sampling
   - reservoir sampling
   - sampling multinomial distribution
   - random generator
-- NLP algorithms (if that's your area of work)
+
+## NLP algorithms 
   - bigrams
   - tf-idf
 

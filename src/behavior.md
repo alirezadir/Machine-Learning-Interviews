@@ -1,4 +1,4 @@
 # Behavioral Interviews 
 
 ## STAR Method 
-[TBD]
+[How to Answer Common Situational Interview Questions](https://www.interviewkickstart.com/career-advice/situational-scenario-based-interview-questions-answers)

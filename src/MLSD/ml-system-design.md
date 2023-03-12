@@ -305,12 +305,18 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Scaling general SW system (distributed servers, load balancer, sharding, replication, caching, etc)
     - Train data / KB partitioning
   - Scaling ML system
+    - Distributed ML 
+      - Data parallelism (for training)
+      - Model parallelism (for training, inference)
+        - Asynchronous SGD 
+        - Synchronous SGD 
     - [Distributed training]()
-      - Data parallel DT
-      - RPC based DT   
-    - Data parallelism (for training)
-    - Model parallelism (for inference)
-    - Monitoring, failure tolerance, updating
+      - Data parallel DT, RPC based DT   
+    - Scaling data collection 
+      - [MT for 1000 languages](https://arxiv.org/abs/2205.03983)
+      - [NLLB](https://research.facebook.com/publications/no-language-left-behind/)
+    - Monitoring, failure tolerance, updating (below)
+    - Auto ML (soft: HP tuning, hard: arch search (NAS))
 - Monitoring:
   - Logging
     - Features, predictions, metrics, events
