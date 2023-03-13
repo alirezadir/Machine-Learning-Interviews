@@ -1,5 +1,5 @@
 # <a name="ml-coding"></a> 2. ML/Data Coding :robot:
-ML coding module may or may not exist in particular companies interviews. The good news is that, there are a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
+ML coding module may or may not exist in particular companies interviews. The good news is that, there are only a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 
 ## ML Algorithms 
 - K-means clustering ([code](https://colab.research.google.com/drive/1jbBmsNZ1hBUXm-Y2JEeOFhLdYC_UwOYF?usp=sharing))
@@ -16,8 +16,8 @@ ML coding module may or may not exist in particular companies interviews. The go
 
 - Linear SVM ([link](https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47))
 - Softmax 
+- Convolution, CNN 
 - RNN 
-- CNN 
 
 ##  Sampling
   - stratified sampling ([link](https://towardsdatascience.com/the-5-sampling-algorithms-every-data-scientist-need-to-know-43c7bc11d17c))
