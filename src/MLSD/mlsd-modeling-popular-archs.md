@@ -4,7 +4,7 @@
 * ## Two stage funnel architecture 
   * candidate generation + ranking
 
-* ## Tow-tower architecture
+* ## Two-tower architecture
 
 * ## Wide and deep learning
 

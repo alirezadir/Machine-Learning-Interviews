@@ -83,7 +83,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
 
 - Offline metrics (e.g. classification, relevance metrics)  
   - Classification metrics
-    - Precision, Recall, F1, AUC ROC, mAP, log-loss, etc
+    - Precision, Recall, F1, ROC AUC, P/R AUC, mAP, log-loss, etc
       - Imbalanced data
   - Retrieval and ranking metrics
     - Precision@k, Recall@k (do not consider ranking quality)
@@ -197,7 +197,6 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Pros and cons, and decision
     - Note: Always start as simple as possible (KISS) and iterate over
     <!-- - More on Model Selection (TODO) -->
-
   - Typical modeling choices: 
     - Logistic Regression 
     - Linear regression 
@@ -216,21 +215,8 @@ Note: Remember when using this design flow during an interview to be flexible. A
     - Inference requirements: compute, latency, memory 
     - Continual learning  
     - Interpretability 
-  - Popular NN architectures:
-    - Two stage funnel architecture (candidate generation + ranking )
-    - Tow-tower architecture
-    - Wide and deep learning
-    - Deep cross network
-    - Multi-task learning
-    - Transformers
-      - Encoder, Decoder, Encoder-decoder
-    - Knowledge distillation (student-teacher network)
-    - NLP
-      - BERT, T5, GPT
-    - Computer Vision
-         -Object detectors (single stage, two-stage)
-      - Vision Transformer
-
+  - [Popular NN architectures](./mlsd-modeling-popular-archs.md)
+    
 - Dataset 
   - Sampling
     - Non-probabilistic sampling
@@ -261,6 +247,10 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Offline vs online training  
 
 - Model offline evaluation
+
+- Hyper parameter tuning 
+  - Grid search 
+
 - Iterate over MVP model
     - Model Selection
     - Data augmentation
@@ -346,11 +336,12 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Active learning 
   - Human in the loop ML  
 
-## 10. Beyond MVP
+### Other topics:
 
 - Extensions: 
   - Iterations over the base design to add a new functional feature 
 - Bias in training data
+  - Bias introduced by human labeling 
 - Freshness, Diversity
 - Privacy and security 
 
