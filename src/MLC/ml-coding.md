@@ -44,4 +44,4 @@ ML coding module may or may not exist in particular companies interviews. The go
   - Meeting point  
 
 ## Sample codes
-- You can find some sample codes under the [Notebooks](https://github.com/alirezadir/machine-learning-interviews/tree/main/src/Notebooks).
+- You can find some sample codes under the [Notebooks]().
