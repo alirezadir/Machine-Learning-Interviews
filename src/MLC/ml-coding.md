@@ -2,9 +2,9 @@
 ML coding module may or may not exist in particular companies interviews. The good news is that, there are only a limited number of ML algorithms that candidates are expected to be able to code. The most common ones include:
 
 ## ML Algorithms 
-- Linear regression ([code](./Notebooks/linear_regression.ipynb)) :white_check_mark:
+- Linear regression ([code](./notebooks/linear_regression.ipynb)) :white_check_mark:
 
-- Logistic regression ([code](./Notebooks/logistic_regression.ipynb)) :white_check_mark:
+- Logistic regression ([code](./notebooks/logistic_regression.ipynb)) :white_check_mark:
   
 - K-means clustering ([code](./notebooks/k_means.ipynb)) :white_check_mark:
 
