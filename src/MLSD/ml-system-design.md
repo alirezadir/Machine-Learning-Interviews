@@ -1,11 +1,5 @@
 # <a name="ml-sys"></a>  Machine Learning System Design
 
-## 1. [ML System Design Flow](#ml-sys-d-f)
-## 2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions)
-## 3. [ML System Design Topics](#ml-sys-d-t)
-## 4. [ML at Big Tech companies](#ml-sys-d-c)
-
-
 ### Designing ML systems for production
 
 Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
@@ -26,19 +20,14 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 - The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
 
-# 1. ML System Design Flow <a name="ml-sys-d-f"></a>
+# 1. The 9-Step ML System Design Formula <a name="ml-sys-d-f"></a>
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
-I recommend using the following **9-step ML System Design Flow** to design SW system solutions for ML-relevant business problems both at work and during interviews:
+I recommend using the following **9-Step ML System Design Formula** to design SW system solutions for ML-relevant business problems both at work and during interviews:
 
 <!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
 </p> -->
-
-<center>
-
-**The 9-step ML System Design Flow:**
-</center>
 
 <center>
 
@@ -53,7 +42,7 @@ I recommend using the following **9-step ML System Design Flow** to design SW sy
 |Step 7 |[Prediction Service](#7-prediction-service) |
 |Step 8 |[Online Testing and Deployment](#8-online-testing-and-model-deployment)  |
 |Step 9 |[Scaling, Monitoring, and Updates](#9-scaling-monitoring-and-updates) |
-| | |
+
 </center>
 
 Note: Remember when using this design flow during an interview to be flexible. According to the needs of the interview or the interests of the interviewer, you may skip some of these components or spend more time for a deep dive in one or two components.  
