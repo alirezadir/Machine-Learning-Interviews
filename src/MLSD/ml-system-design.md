@@ -20,7 +20,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 - The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
 
-# 1. The 9-Step ML System Design Formula <a name="ml-sys-d-f"></a>
+# 1. The 9-Step ML System Design Formula ([Template](./ml-sys-design-template.md)) <a name="ml-sys-d-f"></a>
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
 I recommend using the following **9-Step ML System Design Formula** to design SW system solutions for ML-relevant business problems both at work and during interviews:
