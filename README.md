@@ -6,19 +6,21 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/LICENSE) -->
 
-# A guide for Machine Learning Technical Interviews :robot: 
+# Machine Learning Technical Interviews :robot: 
 <p align="center">
-<img width="720" src="src/imgs/cover.png">
+<img width="720" src="src/imgs/MLI-Book-Cover.png">
 </p>
 
 
-This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineer** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
+
+This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineering** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
 
 The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
 
 
+<center>
 
- | | |
+ |Chapter | Content|
  |---| --- |
  | Chapter 1 	|  [General Coding (Algos and Data Structures)](src/lc-coding.md)	   | 
 | Chapter 2 	| [ML Coding](src/MLC/ml-coding.md) 	|  	
@@ -26,6 +28,8 @@ The following components are the most commonly used interview modules for techni
 | Chapter 4 	| [ML Fundamentals/Breadth](src/ml-fundamental.md)| 
 | Chapter 5 	| [Behavioral](src/behavior.md)| 
 |  	|  	|  
+
+</center>
 
 Notes:
 

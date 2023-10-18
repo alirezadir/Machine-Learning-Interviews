@@ -20,7 +20,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 - The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
 
-# 1. The 9-Step ML System Design Formula ([Template](./ml-sys-design-template.md)) <a name="ml-sys-d-f"></a>
+# 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) <a name="ml-sys-d-f"></a>
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
 I recommend using the following **9-Step ML System Design Formula** to design SW system solutions for ML-relevant business problems both at work and during interviews:
@@ -31,17 +31,18 @@ I recommend using the following **9-Step ML System Design Formula** to design SW
 
 <center>
 
-|   |    |  
-|- |-------- | 
-|Step 1| [Problem Formulation](#1-problem-formulation) |
-|Step 2 |[Metrics (Offline and Online)](#2-metrics-offline-and-online) |
-|Step 3 |[Architectural Components (MVP Logic)](#3-architectural-components-mvp-logic)|
-|Step 4 |[Data Collection and Preparation](#4-data-collection-and-preparation) |
-|Step 5 |[Feature Engineering](#5-feature-engineering) |
-|Step 6 |[Model Development and Offline Evaluation](#6-model-development-and-offline-evaluation) |
-|Step 7 |[Prediction Service](#7-prediction-service) |
-|Step 8 |[Online Testing and Deployment](#8-online-testing-and-model-deployment)  |
-|Step 9 |[Scaling, Monitoring, and Updates](#9-scaling-monitoring-and-updates) |
+| | |
+| --- | ---|
+| Step 1| [Problem Formulation](#1-problem-formulation) |
+| Step 2 |[Metrics (Offline and Online)](#2-metrics-offline-and-online) |
+| Step 3 |[Architectural Components (MVP Logic)](#3-architectural-components-mvp-logic)|
+| Step 4 |[Data Collection and Preparation](#4-data-collection-and-preparation) |
+| Step 5 |[Feature Engineering](#5-feature-engineering) |
+| Step 6 |[Model Development and Offline Evaluation](#6-model-development-and-offline-evaluation) |
+| Step 7 |[Prediction Service](#7-prediction-service) |
+| Step 8 |[Online Testing and Deployment](#8-online-testing-and-model-deployment)  |
+| Step 9 |[Scaling, Monitoring, and Updates](#9-scaling-monitoring-and-updates) |
+| | |
 
 </center>
 
@@ -188,10 +189,9 @@ Note: Remember when using this design flow during an interview to be flexible. A
     <!-- - More on Model Selection (TODO) -->
   - Typical modeling choices: 
     - Logistic Regression 
-    - Linear regression 
     - Decision tree variants
       - GBDT (XGBoost) and RF 
-    - SVM
+    <!-- - SVM -->
     - Neural networks 
       - FeedForward 
       - CNN
@@ -235,16 +235,16 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Debugging <!-- - More on Debugging (TODO) -->
   - Offline vs online training  
 
-- Model offline evaluation
+  - Model offline evaluation
 
-- Hyper parameter tuning 
-  - Grid search 
+  - Hyper parameter tuning 
+    - Grid search 
 
-- Iterate over MVP model
-    - Model Selection
-    - Data augmentation
-    - Model update frequency
-- Model calibration
+  - Iterate over MVP model
+      - Model Selection
+      - Data augmentation
+      - Model update frequency
+  - Model calibration
 
 ## 7. Prediction Service
 
@@ -338,31 +338,36 @@ Note: Remember when using this design flow during an interview to be flexible. A
 
 # 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
 
-### Design a:
-* ### Recommendation System
-  - Video recommendation (Netflix, Youtube)
-  - Friend/follower recommendation (Facebook, Twitter)
-    - People you may know (LinkedIn)
+- ### Recommendation Systems
+  - [Video/Movie recommendation](./mlsd-video-recom.md) (Netflix, Youtube)
+  - Friend/follower recommendation (Facebook, Twitter, LinkedIn)
+  - [Event recommendation system](./mlsd-event-recom.md) (Eventbrite)
   - Replacement product recommendation (Instacart)
   - Rental recommendation (Airbnb)
+  - [Game recommendation](./mlsd-game-recom.md)
   - Place recommendation
-- ### Newsfeed system (ranking)
-- ### Search system (retrieval, ranking)
-  - Semantic Search system (retrieval, ranking)
-  - Document search, Image search, Video search
-  - Query: Text, Image, Video
+  
+- ### Search systems (retrieval, ranking)
+  - Document search 
+    - Text search, [Image/Video search](./mlsd-image-search.md) , [MM search](./mlsd-mm-video-search.md) (MM Query)
+    - Semantic Search system 
+
+- ### Newsfeed system (ranking)  
 - ### Ads serving system (retrieval, ranking)
-<!-- - Ads click prediction system (ranking) -->
-- ### Named entity linking system (tagging, resolution)
-- ### Harmful/spam content detection system 
-- ### Autocompletion / Typeahead suggestion system
+  - [Ads click prediction](./mlsd-ads-ranking.md) (ranking)
+- ### Named entity linking system (NLP tagging, reasoning)
+- ### Harmful content / Spam detection system
+  - [Multimodal harmful content detection](./mlsd-harmful-content.md)  
+- ### Autocompletion / typeahead suggestion system
 - ### Ride matching system
 - ### Language identification system
 - ### Chatbot system
 - ### [Question answering system]()
 - ### Proximity service / Yelp
 - ### Food delivery time  approximation
-- ### Self-driving car (Perception, Prediction, Planning)
+- ### Self-driving car 
+  - Perception, Prediction, and Planning
+  - [Pedestrian jaywalking detection](./mlsd-av.md)
 - ### Sentiment analysis system
 - ### Healthcare diagnosis system
 - ### Fraud detection system
