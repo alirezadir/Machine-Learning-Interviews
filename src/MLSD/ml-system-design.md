@@ -1,5 +1,13 @@
 # <a name="ml-sys"></a>  Machine Learning System Design
 
+||
+| --- |
+| 1. [The 9-Step ML System Design Formula](#1-the-9-step-ml-system-design-formula-template) |
+| [2. ML System Design Sample Questions](#2-ml-system-design-sample-questions) |
+|3. [ML System Design Topics](#3-ml-system-design-topics)|
+|4. [ML at big tech companies](#4-ml-at-big-tech-companies)|
+||
+
 ### Designing ML systems for production
 
 Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
@@ -19,11 +27,10 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 - In an ML system design interview you are exposed to open ended questions with no single correct answer.
 - The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
-
 # 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) <a name="ml-sys-d-f"></a>
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
-I recommend using the following **9-Step ML System Design Formula** to design SW system solutions for ML-relevant business problems both at work and during interviews:
+I recommend using the following **9-Step ML System Design Formula**to design SW system solutions for ML-relevant business problems both at work and during interviews:
 
 <!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
@@ -123,7 +130,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
 - Data storage
 - ML Data types
   - structured 
-    - numerical
+    - numerical (discrete, continuous)
     - categorical (ordinal, nominal),
   - unstructured(e.g. image, text, video, audio)
 - Labelling (for supervised)
@@ -335,42 +342,55 @@ Note: Remember when using this design flow during an interview to be flexible. A
 - Privacy and security 
 
 
-
 # 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
+Below are the most common ML system design questions for ML engineering interviews: 
 
-- ### Recommendation Systems
-  - [Video/Movie recommendation](./mlsd-video-recom.md) (Netflix, Youtube)
-  - Friend/follower recommendation (Facebook, Twitter, LinkedIn)
-  - [Event recommendation system](./mlsd-event-recom.md) (Eventbrite)
-  - Replacement product recommendation (Instacart)
-  - Rental recommendation (Airbnb)
-  - [Game recommendation](./mlsd-game-recom.md)
-  - Place recommendation
+### Recommendation Systems
+- **[Video/Movie recommendation](./mlsd-video-recom.md)**(Netflix, Youtube)
+- **Friends / follower recommendation**(Facebook, Twitter, LinkedIn)
+- **[Event recommendation system](./mlsd-event-recom.md)** (Eventbrite)
+- **[Game recommendation](./mlsd-game-recom.md)**
+- **Replacement product recommendation** (Instacart)
+- **Rental recommendation** (Airbnb)
+- **Place recommendation** 
   
-- ### Search systems (retrieval, ranking)
-  - Document search 
-    - Text search, [Image/Video search](./mlsd-image-search.md) , [MM search](./mlsd-mm-video-search.md) (MM Query)
-    - Semantic Search system 
+### Search systems (retrieval, ranking)
+  - **Document search**
+    - **Text search** (full text, fuzzy, semantic), 
+    - **[Image/Video search](./mlsd-image-search.md)**, 
+    - **[Multimodal search](./mlsd-mm-video-search.md)** (MM Query)
+    <!-- - Semantic Search system  -->
+### Ranking systems 
+- **[Newsfeed system](./mlsd-newsfeed.md)** (ranking)  
+- **Ads serving system** (retrieval, ranking)
+  - **[Ads click prediction](./mlsd-ads-ranking.md)** (ranking)
 
-- ### Newsfeed system (ranking)  
-- ### Ads serving system (retrieval, ranking)
-  - [Ads click prediction](./mlsd-ads-ranking.md) (ranking)
-- ### Named entity linking system (NLP tagging, reasoning)
-- ### Harmful content / Spam detection system
-  - [Multimodal harmful content detection](./mlsd-harmful-content.md)  
-- ### Autocompletion / typeahead suggestion system
-- ### Ride matching system
-- ### Language identification system
-- ### Chatbot system
-- ### [Question answering system]()
-- ### Proximity service / Yelp
-- ### Food delivery time  approximation
-- ### Self-driving car 
+### NLP 
+- **Named entity linking system (NLP tagging, reasoning)**
+- **Autocompletion / typeahead suggestion system**
+- **Sentiment analysis system**
+- **Language identification system**
+- **Chatbot system**
+- **[Question answering system]()**
+
+### CV
+  - **Image blurring system**
+  - **OCR/Text recognition system** 
+  
+### AV 
+- **Self-driving car**
   - Perception, Prediction, and Planning
   - [Pedestrian jaywalking detection](./mlsd-av.md)
-- ### Sentiment analysis system
-- ### Healthcare diagnosis system
-- ### Fraud detection system
+- **Ride matching system**
+
+## Other
+- **Proximity service / Yelp**
+- **Food delivery time  approximation**
+- **Harmful content / Spam detection system**
+  - [Multimodal harmful content detection](./mlsd-harmful-content.md)  
+  - Fraud detection system
+- **Healthcare diagnosis system**
+
 
 
 # 3. ML System Design Topics <a name="ml-sys-d-t"></a>
