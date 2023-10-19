@@ -3,7 +3,7 @@
 ||
 | --- |
 | 1. [The 9-Step ML System Design Formula](#1-the-9-step-ml-system-design-formula-template) |
-| [2. ML System Design Sample Questions](#2-ml-system-design-sample-questions) |
+| 2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions) |
 |3. [ML System Design Topics](#3-ml-system-design-topics)|
 |4. [ML at big tech companies](#4-ml-at-big-tech-companies)|
 ||
@@ -27,7 +27,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 - In an ML system design interview you are exposed to open ended questions with no single correct answer.
 - The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
 
-# 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) <a name="ml-sys-d-f"></a>
+# 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) 
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
 I recommend using the following **9-Step ML System Design Formula**to design SW system solutions for ML-relevant business problems both at work and during interviews:
@@ -342,7 +342,7 @@ Note: Remember when using this design flow during an interview to be flexible. A
 - Privacy and security 
 
 
-# 2. ML System Design Sample Questions <a name="ml-sys-d-q"></a>
+# 2. ML System Design Sample Questions 
 Below are the most common ML system design questions for ML engineering interviews: 
 
 ### Recommendation Systems
@@ -393,7 +393,7 @@ Below are the most common ML system design questions for ML engineering intervie
 
 
 
-# 3. ML System Design Topics <a name="ml-sys-d-t"></a>
+# 3. ML System Design Topics 
 
 I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
 
@@ -479,7 +479,7 @@ I observed there are certain sets of topics that are frequently brought up or ca
 <!-- ### Personalization -->
 
 
-# 4. ML at big tech companies  <a name="ml-sys-d-c"></a>
+# 4. ML at big tech companies  
 
 Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
 
