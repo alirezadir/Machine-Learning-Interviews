@@ -347,7 +347,7 @@ Below are the most common ML system design questions for ML engineering intervie
 
 ### Recommendation Systems
 - **[Video/Movie recommendation](./mlsd-video-recom.md)**(Netflix, Youtube)
-- **Friends / follower recommendation**(Facebook, Twitter, LinkedIn)
+- **[Friends / follower recommendation](./mlsd-pymk.md)**(Facebook, Twitter, LinkedIn)
 - **[Event recommendation system](./mlsd-event-recom.md)** (Eventbrite)
 - **[Game recommendation](./mlsd-game-recom.md)**
 - **Replacement product recommendation** (Instacart)
