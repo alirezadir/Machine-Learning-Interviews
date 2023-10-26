@@ -356,7 +356,7 @@ Below are the most common ML system design questions for ML engineering intervie
   
 ### Search systems (retrieval, ranking)
   - **Document search**
-    - **Text search** (full text, fuzzy, semantic), 
+    - **[Text query search](./mlsd-search.md)** (full text, semantic), 
     - **[Image/Video search](./mlsd-image-search.md)**, 
     - **[Multimodal search](./mlsd-mm-video-search.md)** (MM Query)
     <!-- - Semantic Search system  -->
