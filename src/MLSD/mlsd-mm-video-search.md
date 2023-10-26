@@ -1,8 +1,6 @@
 # Multimodal Video Search System 
 
 ### 1. Problem Formulation
-
-### 1. Problem Formulation
 * Clarifying questions
     - What is the primary (business) objective of the search system?
     - What are the specific use cases and scenarios where it will be applied?
