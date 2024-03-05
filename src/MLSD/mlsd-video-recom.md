@@ -84,7 +84,7 @@ The main approaches used for personalized recommendation systems:
 What do we choose? 
 We choose a sequential hybrid model (standard e.g. for video recommendation)
 
-We follow  the three stage recommender system (funnel architecture) in order to meet latency requirements and eb able to scale the system to billions of items. 
+We follow  the three stage recommender system (funnel architecture) in order to meet latency requirements and be able to scale the system to billions of items. 
 
 ```mermaid
    Candidate generation --> Ranking --> Re-ranking
