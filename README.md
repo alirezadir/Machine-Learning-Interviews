@@ -11,7 +11,7 @@
 <img width="720" src="src/imgs/MLI-Book-Cover.png">
 </p>
 
-
+**NEWS(2025): I am offering limited mock interviews for ML/AI engineering roles (ML System design, ML coding, general coding). Please book a free 15 min consultation via [Calendly](https://calendly.com/alireza-dirafzoon/15-min-consultation) if interested.**
 
 This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineering** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
 
