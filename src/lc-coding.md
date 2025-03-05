@@ -13,5 +13,8 @@ At this time, [leetcode](https://leetcode.com/) is the most popular place to pra
 I was introduced to [educative.io](https://www.educative.io/) by a friend of mine, and soon found it super useful in understanding the concepts of CS algorithms in more depth via their nice visualizations as well as categorizations.
 In particular, I found the [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview) pretty helpful in organizing my mind on approaching interview questions with similar patterns. And the [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews) with a great categorization of DP patterns made tackling DP problems a piece of cake even though I was initially scared! Educative team released a new course for cracking the ML interviews w.r.t System Design [Grokking the Machine Learning Interview](https://www.educative.io/courses/grokking-the-machine-learning-interview). 
 
+## Exponent
+
+Exponent's [Machine Learning Coding](https://www.tryexponent.com/courses/ml-engineer#ml-coding) and [ML System Design](https://www.tryexponent.com/courses/ml-engineer#ml-system-design) courses contain practice problems and mock interview videos with machine learning engineers. They also offer [Exponent Practice](https://www.tryexponent.com/practice), where you can practice coding and system design interviews for free with other engineers. 
 
 **Remember:** Interviewing is a skill and the more skillful you are, the better the results will be. 
