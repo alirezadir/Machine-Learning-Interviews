@@ -6,11 +6,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alirezadir/machine-learning-interview-enlightener/blob/main/LICENSE) -->
 
-# Machine Learning Technical Interviews :robot: 
-<p align="center">
-<img width="720" src="src/imgs/MLI-Book-Cover.png">
-</p>
-
+# Machine Learning Technical Interviews
 
 
 This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineering** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
