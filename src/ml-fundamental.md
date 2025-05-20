@@ -1,4 +1,4 @@
-# <a name="breadth"></a> 4. ML Fundamentals (Breadth)
+# <a name="breadth"></a> 3. ML Fundamentals (Breadth)
 As the name suggests, this interview is intended to evaluate your general knowledge of ML concepts both from theoretical and practical perspectives. Unlike ML depth interviews, the breadth interviews tend to follow a pretty similar structure and coverage amongst different interviewers and interviewees.
 
 The best way to prepare for this interview is to review your notes from ML courses as well some high quality online courses and material. In particular, I found the following resources pretty helpful.
