@@ -6,6 +6,7 @@
 | 2. [ML System Design Sample Questions](#2-ml-system-design-sample-questions) |
 |3. [ML System Design Topics](#3-ml-system-design-topics)|
 |4. [ML at big tech companies](#4-ml-at-big-tech-companies)|
+| 5.  [Agentic AI System Design (2025)](https://github.com/alirezadir/Agentic-AI-Systems.git)|
 ||
 
 ### Designing ML systems for production

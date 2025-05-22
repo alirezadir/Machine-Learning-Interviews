@@ -20,8 +20,9 @@ The following components are the most commonly used interview modules for techni
 | Chapter 2 	| [ML Coding](src/MLC/ml-coding.md) 	|  	
 | Chapter 3	| [ML Fundamentals/Breadth](src/ml-fundamental.md)| 
 | Chapter 4 	| [ML System Design (Updated in 2023)](src/MLSD/ml-system-design.md)|
-| Chapter 5 	| [Behavioral](src/behavior.md)| 
-| Chapter 6 	| [*Agentic AI Systems (2025)*](https://github.com/alirezadir/Agentic-AI-Systems.git)|
+| Chapter 5 	| [*Agentic AI Systems (2025)*](https://github.com/alirezadir/Agentic-AI-Systems.git)|
+| Chapter 6 	| [Behavioral](src/behavior.md)| 
+
 |  	|  	|  
 
 </center>
