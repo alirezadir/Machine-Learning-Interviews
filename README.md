@@ -1,5 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Code style: black](https://img.shields.io/badge/code%20style-black-000.svg)](https://github.com/psf/black) [![GitHub stars](https://img.shields.io/github/stars/alirezadir/Machine-Learning-Interviews?style=social)](https://github.com/alirezadir/Machine-Learning-Interviews/stargazers) [![GitHub forks](https://img.shields.io/github/forks/alirezadir/Machine-Learning-Interviews?style=social)](https://github.com/alirezadir/Machine-Learning-Interviews/network) [![Last Commit](https://img.shields.io/github/last-commit/alirezadir/Machine-Learning-Interviews)](https://github.com/alirezadir/Machine-Learning-Interviews/commits/main) [![GitHub issues](https://img.shields.io/github/issues/alirezadir/Machine-Learning-Interviews)](https://github.com/alirezadir/Machine-Learning-Interviews/issues) [![Contributors](https://img.shields.io/github/contributors/alirezadir/Machine-Learning-Interviews)](https://github.com/alirezadir/Machine-Learning-Interviews/graphs/contributors) [![Tweet](https://img.shields.io/twitter/url?label=Share%20on%20X&url=https%3A%2F%2Fgithub.com%2Falirezadir%2FMachine-Learning-Interviews&style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Machine%20Learning%20Interviews%20by%20%40alirezadira%20%E2%80%94%20A%20guide%20to%20prepare%20for%20ML%20interviews!&url=https%3A%2F%2Fgithub.com%2Falirezadir%2FMachine-Learning-Interviews&hashtags=MachineLearning,MLinterviews,AI)
 # Machine Learning Technical Interviews :robot: 
+
+:newspaper: **News: Updated in 2025**: I have added a new repo for [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git), including the latest trends in AI engineering and agentic systems design and development, for those who are interested. You can find a variety of resources, system design summaries, and hands-on coding examples, projects, and more. 
+
 <p align="center">
 <img width="720" src="src/imgs/MLI-Book-Cover.png">
 </p>
@@ -10,7 +13,6 @@ This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engine
 
 The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
 
-:newspaper: **News: Updated in 2025**: I have added a new repo for [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git), including the latest trends in AI engineering and agentic systems design and development, for those who are interested. You can find a variety of resources, system design summaries, and hands-on coding examples, projects, and more. 
 
 <center>
 
