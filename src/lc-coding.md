@@ -6,7 +6,7 @@ Depending on the company and seniority level, there are usually one or two round
 
 ## Leetcode
 
-At this time, [leetcode](https://leetcode.com/) is the most popular place to practice coding questions. I practiced with around 350 problems, which were roughly distributed as **55% Medium, 35% Easy, and 15% Hard** problems. You can find some information on the questions that I practiced in [Ma Leet Sheet](https://docs.google.com/spreadsheets/d/1A8GIgCIn7gvnwE-ZBymI-4-5_ZxQfyeQu99N6f5gEGk/edit#gid=656844248) - Yea I tried to have a little bit fun with it here and there to make the pain easier to carry :D (I will write on my approach to leetcode in the future.)
+At this time, [leetcode](https://leetcode.com/) is the most popular place to practice coding questions. I practiced with around 350 problems, which were roughly distributed as **55% Medium, 35% Easy, and 15% Hard** problems. You can find some information on the questions that I practiced in [Ma Leet Sheet (updated link)](https://docs.google.com/spreadsheets/d/1Ry_JLeOp1fw9mSbbp4ji5l3CZNiCwf8Atevpp0YML6E/edit?usp=sharing) I will write on my approach to leetcode in the future.
 
 ## Educative.io
 
