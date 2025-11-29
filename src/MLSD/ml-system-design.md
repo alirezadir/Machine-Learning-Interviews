@@ -482,7 +482,7 @@ I observed there are certain sets of topics that are frequently brought up or ca
 
 # 4. ML at big tech companies  
 
-Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
+Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-companies.md) section.
 
 # More resources 
 
