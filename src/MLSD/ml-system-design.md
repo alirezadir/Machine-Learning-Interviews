@@ -346,6 +346,16 @@ Note: Remember when using this design flow during an interview to be flexible. A
 # 2. ML System Design Sample Questions 
 Below are the most common ML system design questions for ML engineering interviews: 
 
+### Generative AI / LLM Systems (2026)
+> Increasingly common as a **separate round** (often called *GenAI / LLM system design*). The same 9-step formula applies, but with a GenAI lens — see [§ GenAI / LLM System Design](#genai--llm-system-design-2026) below and the [Agentic AI Systems repo](https://github.com/alirezadir/Agentic-AI-Systems.git).
+- **RAG document Q&A / "chat with your docs"** (retrieval + grounded generation)
+- **LLM-powered customer-support chatbot** (with guardrails, fallback to human)
+- **Agentic workflow / AI assistant** (planning, tool use, memory)
+- **Enterprise / semantic search with LLM answers** (retrieval + synthesis + citations)
+- **Code assistant / coding agent** (RAG over repo + tool use + verification)
+- **Content generation / summarization at scale** (batch + safety filtering)
+- **LLM-based recommendation / personalization** (LLM as ranker or feature generator)
+
 ### Recommendation Systems
 - **[Video/Movie recommendation](./mlsd-video-recom.md)**(Netflix, Youtube)
 - **[Friends / follower recommendation](./mlsd-pymk.md)**(Facebook, Twitter, LinkedIn)
@@ -478,6 +488,25 @@ I observed there are certain sets of topics that are frequently brought up or ca
 ### Graph problems
 - People you may know 
 <!-- ### Personalization -->
+
+### GenAI / LLM System Design (2026)
+
+The single most important addition to the modern ML system design interview. In 2026, *"evaluation methodology is the new system design"* — and interviewers care more about **cost, latency, guardrails, and monitoring** than about the architecture diagram. A recurring framing: know **where the LLM fits and where deterministic systems should take over**.
+
+- **Knowledge / context strategy** (key tradeoff): **RAG vs fine-tuning vs long-context vs tools/memory**
+  - RAG when knowledge is large / changing / needs citations; fine-tune for behavior, format, or domain style; long-context for whole-doc reasoning; combine in practice (instruction-tuned base + light LoRA + RAG)
+- **RAG pipeline** (the most common pattern):
+  - Ingestion: **chunking** (size/overlap, semantic vs fixed), **embedding model**, **vector DB / ANN index** (HNSW, IVF-PQ)
+  - Retrieval: dense vs **hybrid (dense + BM25/keyword)**, metadata filtering, **re-ranking** (cross-encoder), query rewriting / HyDE
+  - Generation: grounded prompt, **citations**, context-window budgeting, handling "no answer"
+  - Advanced: multi-hop / agentic RAG, GraphRAG, **caching** (prompt/embedding/semantic cache)
+- **Agentic systems**: planning (ReAct, plan-and-execute), **tool/function calling**, **memory** (short-term context, long-term store), multi-agent orchestration, **failure modes** (loops, hallucinated tools, error recovery), human-in-the-loop
+- **Serving & scaling**: inference API design, **KV cache**, continuous batching (vLLM), **quantization**, speculative decoding; model routing (small vs large), **self-host vs API** tradeoffs
+- **Reliability (production LLM eng)**: rate limits, **retries / timeouts / idempotency**, fallbacks, queues, **circuit breakers**, graceful degradation
+- **Guardrails & safety**: input/output filtering, **prompt-injection & jailbreak** defense, PII redaction, grounding/hallucination checks, content moderation, refusal handling
+- **Evaluation (emphasize this!)**: build a **golden set**, **LLM-as-judge**, pairwise win-rate, **RAG triad** (faithfulness, answer relevance, context relevance), retrieval metrics (recall@k, MRR, nDCG), **offline eval + online A/B + regression testing** before ship
+- **Cost & latency**: token accounting, prompt/context optimization, caching, batching, streaming (TTFT vs total latency), small-model routing
+- **Monitoring**: track quality drift, hallucination rate, retrieval hit rate, latency/cost per request, user feedback loops; trace/observability (per-step logging for agents)
 
 
 # 4. ML at big tech companies  
